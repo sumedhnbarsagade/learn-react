@@ -1,0 +1,1630 @@
+<style>
+  .course-card img {
+    border-radius: 5px 5px 0px 0px;
+  }
+  /* Style the tab */
+  .tab {
+    overflow: hidden;
+    background-color: #f2f2f2 !important;    
+}
+.tab button {
+    border: 1px solid #dfdfdf;
+    border-radius: 0.2rem;
+  }
+
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    border: 1px solid #0078d4;
+    border-radius: 0.2rem;
+    cursor: pointer;
+  }
+
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #0078d4 !important;
+    color: #fff;
+  }
+
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    border-top: none;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  h4 a {
+    text-decoration: none;
+  }
+
+  /* //new css */
+  .container {
+    margin: 10px 0px;
+    padding: 10px 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .course-container {
+    display: inline-flex;
+  }
+
+  /* .course-card {
+    width: 220px;
+    height: 300px;
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #f2f2f2;
+    background: #f2f2f2 !important;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.125rem rgba(0, 0, 0, 0.12),
+      0 0.125rem 0.25rem rgba(0, 0, 0, 0.14);
+  } */
+  .course-card {
+    width: 380px;
+    height: 300px;
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #dfdfdf;
+    background: #ffffff !important;
+    border-radius: 0.5rem;
+    /* box-shadow: 0 0 0.125rem rgba(0, 0, 0, 0.12), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.14); */
+}
+
+  .course-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 2px 6px 10px 0 rgba(0, 0, 0, 0.2) !important;
+  }
+
+  .course-name {
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  .course-description {
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #cecece;
+  }
+
+  .details {
+    display: flex;
+    margin: 10px 0px;
+  }
+
+  .course-type {
+    width: 50%;
+    font-weight: bold;
+  }
+
+  .course-buttons {
+    display: flex;
+  }
+
+  h4 {
+    padding-top: 0px;
+  }
+</style>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'All')" id="defaultOpen">
+    All
+  </button>
+  <button class="tablinks" onclick="openCity(event, 'Overview')">
+    Overview
+  </button>
+  <button class="tablinks" onclick="openCity(event, 'ETL')">ETL Testing</button>
+  <button class="tablinks" onclick="openCity(event, 'Migration')">
+    Data Migration Testing
+  </button>
+  <button class="tablinks" onclick="openCity(event, 'Big-data-edition')">
+    Big Data Editions
+  </button>
+  <button class="tablinks" onclick="openCity(event, 'Production')">
+    Production Data Monitoring
+  </button>
+  <button class="tablinks" onclick="openCity(event, 'BI-report')">
+    BI Report Testing
+  </button>
+  <button class="tablinks" onclick="openCity(event, 'Interview')">
+    Interview
+  </button>
+  <button class="tablinks" onclick="openCity(event, 'Big-data-testing')">
+    Big Data Testing
+  </button>
+  <button class="tablinks" onclick="openCity(event, 'DataOps-Platform')">
+    DataOps Platform
+  </button>
+  <button
+    class="tablinks"
+    onclick="openCity(event, 'etl-and-data-warehouse-testing')"
+  >
+    ETL & Data Warehouse Testing
+  </button>
+</div>
+<div id="All" class="tabcontent">
+  <!-- How to Compare Flat File with Table using iceDQ? -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/videos/how-to-compare-flat-file-with-table"
+          rel="noopener noreferrer"
+          ><img
+            src="https://ng.gawande.org/wp-content/uploads/2024/07/How-to-Compare-Flat-File-with-Table-Video-Featured-Image-iceDQ.png"
+            alt="How to Compare Flat File with Table using iceDQ?"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/videos/how-to-compare-flat-file-with-table"
+            rel="noopener noreferrer"
+            >How to Compare Flat File with Table using iceDQ?</a
+          >
+        </h4>
+      </div>
+      <!-- <div class="course-description">
+        <p>Video</p>
+      </div> -->
+    </div>
+  </div>
+  <!-- How to Compare Source and Target Database Schemas with iceDQ? -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/videos/how-to-compare-source-and-target-database-schemas"
+          rel="noopener noreferrer"
+          ><img
+            src="https://ng.gawande.org/wp-content/uploads/2024/07/How-to-Compare-Source-and-Target-Database-Schemas-Video-Featured-Image-iceDQ.png"
+            alt="How to Compare Source and Target Database Schemas with iceDQ?"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/videos/how-to-compare-source-and-target-database-schemas"
+            rel="noopener noreferrer"
+            >How to Compare Source and Target Database Schemas with iceDQ?</a
+          >
+        </h4>
+      </div>
+      <!-- <div class="course-description">
+        <p>Video</p>
+      </div> -->
+    </div>
+  </div>
+  <!-- How to Validate Flat Files with iceDQ -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/videos/how-to-validate-flat-files"
+          rel="noopener noreferrer"
+          ><img
+            src="How to Validate Flat Files Video Featured Image - iceDQ"
+            alt="How to Validate Flat Files with iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/videos/how-to-validate-flat-files"
+            rel="noopener noreferrer"
+            >How to Validate Flat Files with iceDQ?</a
+          >
+        </h4>
+      </div>
+      <!-- <div class="course-description">
+        <p>Video</p>
+      </div> -->
+    </div>
+  </div>
+  <!-- How to Find Duplicate Rows with iceDQ? -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/videos/how-to-find-duplicate-rows"
+          rel="noopener noreferrer"
+          ><img
+            src="https://ng.gawande.org/wp-content/uploads/2024/07/How-to-Find-Duplicate-Rows-Video-Featured-Image-iceDQ.png"
+            alt="How to Find Duplicate Rows with iceDQ?"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/videos/how-to-find-duplicate-rows"
+            rel="noopener noreferrer"
+            >How to Find Duplicate Rows with iceDQ?</a
+          >
+        </h4>
+      </div>
+      <!-- <div class="course-description">
+        <p>Video</p>
+      </div> -->
+    </div>
+  </div>
+  <!--How to Perform Row Count Reconciliation with iceDQ? -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/videos/how-to-perform-row-count-reconciliation"
+          rel="noopener noreferrer"
+          ><img
+            src="https://ng.gawande.org/wp-content/uploads/2024/07/How-to-Perform-Row-Count-Reconciliation-Video-Featured-Image-iceDQ.png"
+            alt="How to Perform Row Count Reconciliation with iceDQ?"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/videos/how-to-perform-row-count-reconciliation"
+            rel="noopener noreferrer"
+            >How to Perform Row Count Reconciliation with iceDQ?</a
+          >
+        </h4>
+      </div>
+      <!-- <div class="course-description">
+        <p>Video</p>
+      </div> -->
+    </div>
+  </div>
+  <!--How to test Reference Data using Validation Rule in iceDQ? -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/videos/how-to-test-reference-data-using-validation-rule"
+          rel="noopener noreferrer"
+          ><img
+            src="https://ng.gawande.org/wp-content/uploads/2024/07/How-to-test-Reference-Data-using-Validation-Rule-Video-Featured-Image-iceDQ.png"
+            alt="How to test Reference Data using Validation Rule in iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/videos/how-to-test-reference-data-using-validation-rule"
+            rel="noopener noreferrer"
+            >How to test Reference Data using Validation Rule in iceDQ?</a
+          >
+        </h4>
+      </div>
+      <!-- <div class="course-description">
+        <p>Video</p>
+      </div> -->
+    </div>
+  </div>
+  <!--How to test Reference Data using Reconciliation Rule in iceDQ? -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/videos/how-to-test-reference-data-using-reconciliation-rule"
+          rel="noopener noreferrer"
+          ><img
+            src="https://ng.gawande.org/wp-content/uploads/2024/07/How-to-test-Reference-Data-using-Reconciliation-Rule-Video-Featured-Image-iceDQ.png"
+            alt="How to test Reference Data using Reconciliation Rule in iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/videos/how-to-test-reference-data-using-reconciliation-rule"
+            rel="noopener noreferrer"
+            >How to test Reference Data using Reconciliation Rule in iceDQ?</a
+          >
+        </h4>
+      </div>
+      <!-- <div class="course-description">
+        <p>Video</p>
+      </div> -->
+    </div>
+  </div>
+  <!--How to test Referential Data Integrity using iceDQ? -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/videos/how-to-test-referential-data-integrity"
+          rel="noopener noreferrer"
+          ><img
+            src="https://ng.gawande.org/wp-content/uploads/2024/07/How-to-test-Referential-Data-Integrity-Video-Featured-Image-iceDQ.png"
+            alt="How to test Referential Data Integrity using iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/videos/how-to-test-referential-data-integrity"
+            rel="noopener noreferrer"
+            >How to test Referential Data Integrity using iceDQ?</a
+          >
+        </h4>
+      </div>
+      <!-- <div class="course-description">
+        <p>Video</p>
+      </div> -->
+    </div>
+  </div>
+  <!--How to Effectively Use Parameters in iceDQ for Rule Flexibility and Reusability? -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/videos/rule-flexibility-and-reusability-parameters"
+          rel="noopener noreferrer"
+          ><img
+            src="https://ng.gawande.org/wp-content/uploads/2024/07/How-to-Effectively-Use-Parameters-in-iceDQ-for-Rule-Flexibility-and-Reusability-Video-Featured-Image-iceDQ.png"
+            alt="How to Effectively Use Parameters in iceDQ for Rule Flexibility and Reusability"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/videos/rule-flexibility-and-reusability-parameters"
+            rel="noopener noreferrer"
+            >How to Effectively Use Parameters in iceDQ for Rule Flexibility and
+            Reusability?</a
+          >
+        </h4>
+      </div>
+      <!-- <div class="course-description">
+        <p>Video</p>
+      </div> -->
+    </div>
+  </div>
+  <!--How to Verify Date Format? -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/videos/how-to-verify-date-format"
+          rel="noopener noreferrer"
+          ><img
+            src="https://ng.gawande.org/wp-content/uploads/2024/07/How-to-Verify-Date-Format-Video-Featured-Image-iceDQ.png"
+            alt="How to Verify Date Format"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/videos/how-to-verify-date-format"
+            rel="noopener noreferrer"
+            >How to Verify Date Format?</a
+          >
+        </h4>
+      </div>
+      <!-- <div class="course-description">
+        <p>Video</p>
+      </div> -->
+    </div>
+  </div>
+  <!--How to Verify Transformation Logic using Concat Expression? -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/videos/how-to-verify-transformation-logic-using-concat-expression"
+          rel="noopener noreferrer"
+          ><img
+            src="https://ng.gawande.org/wp-content/uploads/2024/07/How-to-Verify-Transformation-Logic-using-Concat-Expression-Video-Featured-Image-iceDQ.png"
+            alt="How to Verify Transformation Logic using Concat Expression"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/videos/how-to-verify-transformation-logic-using-concat-expression"
+            rel="noopener noreferrer"
+            >How to Verify Transformation Logic using Concat Expression?</a
+          >
+        </h4>
+      </div>
+      <!-- <div class="course-description">
+        <p>Video</p>
+      </div> -->
+    </div>
+  </div>
+  <!--How to Perform Validations for Data Patterns in File? -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/video/how-to-perform-validations-for-data-patterns-in-file"
+          rel="noopener noreferrer"
+          ><img
+            src="https://ng.gawande.org/wp-content/uploads/2024/07/How-to-Perform-Validations-for-Data-Patterns-in-File-Video-Featured-Image-iceDQ.png"
+            alt="How to Perform Validations for Data Patterns in File?"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/video/how-to-perform-validations-for-data-patterns-in-file"
+            rel="noopener noreferrer"
+            >How to Perform Validations for Data Patterns in File?</a
+          >
+        </h4>
+      </div>
+      <!-- <div class="course-description">
+        <p>Video</p>
+      </div> -->
+    </div>
+  </div>
+  <!--How to Perform Data Validation for Numeric Patterns? -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/videos/how-to-perform-data-validation-for-numeric-patterns"
+          rel="noopener noreferrer"
+          ><img
+            src="https://ng.gawande.org/wp-content/uploads/2024/07/How-to-Perform-Data-Validation-for-Numeric-Patterns-Video-Featured-Image-iceDQ.png"
+            alt="How to Perform Data Validation for Numeric Patterns"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/videos/how-to-perform-data-validation-for-numeric-patterns"
+            rel="noopener noreferrer"
+            >How to Perform Data Validation for Numeric Patterns?</a
+          >
+        </h4>
+      </div>
+      <!-- <div class="course-description">
+        <p>Video</p>
+      </div> -->
+    </div>
+  </div>
+  <!--How to Validate Flat File with its Control File? -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/videos/how-to-validate-flat-file-with-its-control-file"
+          rel="noopener noreferrer"
+          ><img
+            src="https://ng.gawande.org/wp-content/uploads/2024/07/How-to-Validate-Flat-File-with-its-Control-File-Video-Featured-Image-iceDQ.png"
+            alt="How to Validate Flat File with its Control File"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/videos/how-to-validate-flat-file-with-its-control-file"
+            rel="noopener noreferrer"
+            >How to Validate Flat File with its Control File?</a
+          >
+        </h4>
+      </div>
+      <!-- <div class="course-description">
+        <p>Video</p>
+      </div> -->
+    </div>
+  </div>
+  <!--How to Validate Tables after Data Migration between SQL Server and Snowflake? -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/videos/how-to-validate-tables-after-data-migration-between-sql-server-and-snowflake"
+          rel="noopener noreferrer"
+          ><img
+            src="https://ng.gawande.org/wp-content/uploads/2024/07/How-to-Validate-Tables-after-Data-Migration-between-SQL-Server-and-Snowflake-Video-Featured-Image-iceDQ.png"
+            alt="How to Validate Tables after Data Migration between SQL Server and Snowflake"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/videos/how-to-validate-tables-after-data-migration-between-sql-server-and-snowflake"
+            rel="noopener noreferrer"
+            >How to Validate Tables after Data Migration between SQL Server and
+            Snowflake?</a
+          >
+        </h4>
+      </div>
+      <!-- <div class="course-description">
+        <p>Video</p>
+      </div> -->
+    </div>
+  </div>
+  <!--How to Find Common Records between Source and Target tables? -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/videos/how-to-find-common-records-between-source-and-target-tables"
+          rel="noopener noreferrer"
+          ><img
+            src="https://ng.gawande.org/wp-content/uploads/2024/07/How-to-Find-Common-Records-between-Source-and-Target-tables-Video-Featured-Image-iceDQ.png"
+            alt="How to Find Common Records between Source and Target tables"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/videos/how-to-find-common-records-between-source-and-target-tables"
+            rel="noopener noreferrer"
+            >How to Find Common Records between Source and Target tables?</a
+          >
+        </h4>
+      </div>
+      <!-- <div class="course-description">
+        <p>Video</p>
+      </div> -->
+    </div>
+  </div>
+  <!--How to Compare Transactional Data in Source with Aggregated Data in Target? -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/videos/how-to-compare-transactional-data-in-source-with-aggregated-data-in-target"
+          rel="noopener noreferrer"
+          ><img
+            src="https://ng.gawande.org/wp-content/uploads/2024/07/How-to-Compare-Transactional-Data-in-Source-with-Aggregated-Data-in-Target-Video-Featured-Image-iceDQ.png"
+            alt="How to Compare Transactional Data in Source with Aggregated Data in Target"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/videos/how-to-compare-transactional-data-in-source-with-aggregated-data-in-target"
+            rel="noopener noreferrer"
+            >How to Compare Transactional Data in Source with Aggregated Data in
+            Target?</a
+          >
+        </h4>
+      </div>
+      <!-- <div class="course-description">
+        <p>Video</p>
+      </div> -->
+    </div>
+  </div>
+
+  <!-- icedq overview -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/videos/overview-and-use-cases"
+          rel="noopener noreferrer"
+          ><img
+            src="https://ng.gawande.org/wp-content/uploads/2024/07/Overview-and-Use-Cases-Video-Featured-Image-iceDQ.png"
+            alt="Overview Use Cases-iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/videos/overview-and-use-cases"
+            rel="noopener noreferrer"
+            >iceDQ Overview & Use Cases</a
+          >
+        </h4>
+      </div>
+      <!-- <div class="course-description">
+        <p>Video</p>
+      </div> -->
+    </div>
+  </div>
+  <!-- big data lake and data Warehouses testing -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a href="https://icedq.com/videos/etl-testing" rel="noopener noreferrer"
+          ><img
+            src="https://ng.gawande.org/wp-content/uploads/2024/07/ETL-Test-Automation-Platform-for-Data-Lakes-Data-Warehouses-Video-Featured-Image-iceDQ.png"
+            alt="ETL Testing-iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/videos/etl-testing"
+            rel="noopener noreferrer"
+            >iceDQ for ETL Testing - Big Data Lakes & Data Warehouses</a
+          >
+        </h4>
+      </div>
+      <!-- <div class="course-description">
+        <p>Video</p>
+      </div> -->
+    </div>
+  </div>
+  <!-- iceDQ's Standard & Big Data Editions -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/videos/standard-edition-and-big-data-edition"
+          rel="noopener noreferrer"
+          ><img
+            src="https://ng.gawande.org/wp-content/uploads/2024/07/Standard-Big-Data-Editions-Video-Featured-Image-iceDQ.png"
+            alt="Big Data Editions-iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/videos/standard-edition-and-big-data-edition"
+            rel="noopener noreferrer"
+            >iceDQ's Standard & Big Data Editions</a
+          >
+        </h4>
+      </div>
+      <!-- <div class="course-description">
+        <p>Video</p>
+      </div> -->
+    </div>
+  </div>
+  <!-- iceDQ for Data Migration Testing & Cloud Migration Testing -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/videos/data-migration-testing"
+          rel="noopener noreferrer"
+          ><img
+            src="https://ng.gawande.org/wp-content/uploads/2024/07/Data-Migration-Testing-Cloud-Migration-Testing-Video-Featured-Image-iceDQ.png"
+            alt="Data Migration Testing Cloud Migration Testing-iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/videos/data-migration-testing"
+            rel="noopener noreferrer"
+            >iceDQ for Data Migration Testing & Cloud Migration Testing</a
+          >
+        </h4>
+      </div>
+      <!-- <div class="course-description">
+        <p>Video</p>
+      </div> -->
+    </div>
+  </div>
+  <!-- iceDQ for Data Migration Testing & Cloud Migration Testing -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/videos/production-data-monitoring"
+          rel="noopener noreferrer"
+          ><img
+            src="https://ng.gawande.org/wp-content/uploads/2024/07/Production-Data-Monitoring-Compliance-Video-Featured-Image-iceDQ.png"
+            alt="Production Data Monitoring Compliance-iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/videos/production-data-monitoring"
+            rel="noopener noreferrer"
+            >iceDQ for Production Data Monitoring & Compliance</a
+          >
+        </h4>
+      </div>
+      <!-- <div class="course-description">
+        <p>Video</p>
+      </div> -->
+    </div>
+  </div>
+  <!-- iceDQ for BI Report Testing & Dashboard Testing -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/videos/bi-report-testing"
+          rel="noopener noreferrer"
+          ><img
+            src="https://ng.gawande.org/wp-content/uploads/2024/07/BI-Report-Testing-Dashboard-Testing-Video-Featured-Image-iceDQ.png"
+            alt="BI Report Testing Dashboard Testing - iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/videos/bi-report-testing"
+            rel="noopener noreferrer"
+            >iceDQ for BI Report Testing & Dashboard Testing</a
+          >
+        </h4>
+      </div>
+      <!-- <div class="course-description">
+        <p>Video</p>
+      </div> -->
+    </div>
+  </div>
+  <!-- A Solutions Review Expert Interview -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/news/solutions-review-had-an-expert-discussion-with-our-cto-mr-sandesh-gawande"
+          rel="noopener noreferrer"
+          ><img
+            src="https://icedq.com/wp-content/uploads/2024/06/A-Solutions-Review-Expert-Interview-News-Feature-Image-iceDQ.png"
+            alt="Solutions Review had an expert-iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/news/solutions-review-had-an-expert-discussion-with-our-cto-mr-sandesh-gawande"
+            rel="noopener noreferrer"
+            >A Solutions Review Expert Interview</a
+          >
+        </h4>
+      </div>
+      <!-- <div class="course-description">
+        <p>Video</p>
+      </div> -->
+    </div>
+  </div>
+  <!-- iceDQ for Big Data Testing -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/videos/big-data-testing"
+          rel="noopener noreferrer"
+          ><img
+            src="https://ng.gawande.org/wp-content/uploads/2024/07/Big-Data-Testing-Video-Featured-Image-iceDQ.png"
+            alt="iceDQ for Big Data Testing"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/videos/big-data-testing"
+            rel="noopener noreferrer"
+            >iceDQ for Big Data Testing</a
+          >
+        </h4>
+      </div>
+      <!-- <div class="course-description">
+        <p>Video</p>
+      </div> -->
+    </div>
+  </div>
+  <!-- iceDQ for Big Data Testing -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/videos/dataops-platform-for-testing-and-monitoring"
+          rel="noopener noreferrer"
+          ><img
+            src="https://ng.gawande.org/wp-content/uploads/2024/07/DataOps-Platform-for-Data-Test-Automation-and-Monitoring-Video-Featured-Image-iceDQ.png"
+            alt="Solutions Review had an expert-iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/videos/dataops-platform-for-testing-and-monitoring"
+            rel="noopener noreferrer"
+            >iceDQ - DataOps Platform for Data Test Automation and Monitoring</a
+          >
+        </h4>
+      </div>
+      <!-- <div class="course-description">
+        <p>Video</p>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+<div id="Overview" class="tabcontent">
+  <div>
+    <div
+      class="per-video"
+      style="float: left; background: #f2f2f2; width: 280px"
+    >
+      <a href="https://icedq.com/videos/overview-and-use-cases"
+        ><img
+          src="https://ng.gawande.org/wp-content/uploads/2024/07/Overview-and-Use-Cases-Video-Featured-Image-iceDQ.png"
+          alt="Overview Use Cases-iceDQ"
+          width="280px"
+          height="165px"
+      /></a>
+      <h3
+        style="
+          font-size: 1em;
+          text-align: left;
+          padding-right: 0.5em;
+          padding-left: 0.5em;
+        "
+      >
+        <a href="https://icedq.com/videos/overview-and-use-cases"
+          >iceDQ Overview & Use Cases</a
+        >
+      </h3>
+      <p class="resource-listing-item-meta" style="padding-bottom: 0.5em">
+        Video
+      </p>
+    </div>
+  </div>
+</div>
+
+<div id="ETL" class="tabcontent">
+  <div>
+    <div
+      class="per-video"
+      style="float: left; background: #f2f2f2; width: 280px"
+    >
+      <a href="https://icedq.com/videos/etl-testing"
+        ><img
+          src="https://ng.gawande.org/wp-content/uploads/2024/07/ETL-Test-Automation-Platform-for-Data-Lakes-Data-Warehouses-Video-Featured-Image-iceDQ.png"
+          alt="ETL Testing-iceDQ"
+          width="280px"
+          height="165px"
+      /></a>
+      <h3
+        style="
+          font-size: 1em;
+          text-align: left;
+          padding-right: 0.5em;
+          padding-left: 0.5em;
+        "
+      >
+        <a href="https://icedq.com/videos/etl-testing"
+          >iceDQ for ETL Testing - Big Data Lakes & Data Warehouses</a
+        >
+      </h3>
+      <p class="resource-listing-item-meta" style="padding-bottom: 0.5em">
+        Video
+      </p>
+    </div>
+  </div>
+</div>
+
+<div id="Migration" class="tabcontent">
+  <div>
+    <div
+      class="per-video"
+      style="float: left; background: #f2f2f2; width: 280px"
+    >
+      <a href="https://icedq.com/videos/data-migration-testing"
+        ><img
+          src="https://ng.gawande.org/wp-content/uploads/2024/07/Data-Migration-Testing-Cloud-Migration-Testing-Video-Featured-Image-iceDQ.png"
+          alt="Data Migration Testing Cloud Migration Testing-iceDQ"
+          width="280px"
+          height="165px"
+      /></a>
+      <h3
+        style="
+          font-size: 1em;
+          text-align: left;
+          padding-right: 0.5em;
+          padding-left: 0.5em;
+        "
+      >
+        <a href="https://icedq.com/videos/data-migration-testing"
+          >iceDQ for Data Migration Testing & Cloud Migration Testing</a
+        >
+      </h3>
+      <p class="resource-listing-item-meta" style="padding-bottom: 0.5em">
+        Video
+      </p>
+    </div>
+  </div>
+</div>
+
+<div id="Big-data-edition" class="tabcontent">
+  <div>
+    <div
+      class="per-video"
+      style="float: left; background: #f2f2f2; width: 280px"
+    >
+      <a href="https://icedq.com/videos/standard-edition-and-big-data-edition"
+        ><img
+          src="https://ng.gawande.org/wp-content/uploads/2024/07/Standard-Big-Data-Editions-Video-Featured-Image-iceDQ.png"
+          alt="Big Data Editions-iceDQ"
+          width="280px"
+          height="165px"
+      /></a>
+      <h3
+        style="
+          font-size: 1em;
+          text-align: left;
+          padding-right: 0.5em;
+          padding-left: 0.5em;
+        "
+      >
+        <a href="https://icedq.com/videos/standard-edition-and-big-data-edition"
+          >iceDQ's Standard & Big Data Editions</a
+        >
+      </h3>
+      <p class="resource-listing-item-meta" style="padding-bottom: 0.5em">
+        Video
+      </p>
+    </div>
+  </div>
+</div>
+
+<div id="Production" class="tabcontent">
+  <div>
+    <div
+      class="per-video"
+      style="float: left; background: #f2f2f2; width: 280px"
+    >
+      <a href="https://icedq.com/videos/production-data-monitoring"
+        ><img
+          src="https://ng.gawande.org/wp-content/uploads/2024/07/Production-Data-Monitoring-Compliance-Video-Featured-Image-iceDQ.png"
+          alt="Production Data Monitoring Compliance-iceDQ"
+          width="280px"
+          height="165px"
+      /></a>
+      <h3
+        style="
+          font-size: 1em;
+          text-align: left;
+          padding-right: 0.5em;
+          padding-left: 0.5em;
+        "
+      >
+        <a href="https://icedq.com/videos/production-data-monitoring"
+          >iceDQ for Production Data Monitoring & Compliance</a
+        >
+      </h3>
+      <p class="resource-listing-item-meta" style="padding-bottom: 0.5em">
+        Video
+      </p>
+    </div>
+  </div>
+</div>
+
+<div id="BI-report" class="tabcontent">
+  <div>
+    <div
+      class="per-video"
+      style="float: left; background: #f2f2f2; width: 280px"
+    >
+      <a href="https://icedq.com/videos/bi-report-testing"
+        ><img
+          src="https://ng.gawande.org/wp-content/uploads/2024/07/Big-Data-Testing-Video-Featured-Image-iceDQ.png"
+          alt="iceDQ for BI Report Testing Dashboard Testing-iceDQ"
+          width="280px"
+          height="165px"
+      /></a>
+      <h3
+        style="
+          font-size: 1em;
+          text-align: left;
+          padding-right: 0.5em;
+          padding-left: 0.5em;
+        "
+      >
+        <a href="https://icedq.com/videos/bi-report-testing"
+          >iceDQ for BI Report Testing & Dashboard Testing</a
+        >
+      </h3>
+      <p class="resource-listing-item-meta" style="padding-bottom: 0.5em">
+        Video
+      </p>
+    </div>
+  </div>
+</div>
+
+<div id="Interview" class="tabcontent">
+  <div>
+    <div
+      class="per-video"
+      style="float: left; background: #f2f2f2; width: 280px"
+    >
+      <a
+        href="https://icedq.com/news/solutions-review-had-an-expert-discussion-with-our-cto-mr-sandesh-gawande"
+        ><img
+          src="https://icedq.com/wp-content/uploads/2018/08/Solutions-Review-had-an-expert-iceDQ-414x234.jpg"
+          alt="Solutions Review had an expert-iceDQ"
+          width="280px"
+          height="165px"
+      /></a>
+      <h3
+        style="
+          font-size: 1em;
+          text-align: left;
+          padding-right: 0.5em;
+          padding-left: 0.5em;
+        "
+      >
+        <a
+          href="https://icedq.com/news/solutions-review-had-an-expert-discussion-with-our-cto-mr-sandesh-gawande"
+          >A Solutions Review Expert Interview</a
+        >
+      </h3>
+      <p class="resource-listing-item-meta" style="padding-bottom: 0.5em">
+        Video
+      </p>
+    </div>
+  </div>
+</div>
+
+<div id="Big-data-testing" class="tabcontent">
+  <div>
+    <div
+      class="per-video"
+      style="float: left; background: #f2f2f2; width: 280px"
+    >
+      <a href="https://icedq.com/videos/big-data-testing"
+        ><img
+          src="https://ng.gawande.org/wp-content/uploads/2024/07/Big-Data-Testing-Video-Featured-Image-iceDQ.png"
+          alt="Solutions Review had an expert-iceDQ"
+          width="280px"
+          height="165px"
+      /></a>
+      <h3
+        style="
+          font-size: 1em;
+          text-align: left;
+          padding-right: 0.5em;
+          padding-left: 0.5em;
+        "
+      >
+        <a href="https://icedq.com/videos/big-data-testing"
+          >iceDQ for Big Data Testing</a
+        >
+      </h3>
+      <p class="resource-listing-item-meta" style="padding-bottom: 0.5em">
+        Video
+      </p>
+    </div>
+  </div>
+</div>
+
+<div id="DataOps-Platform" class="tabcontent">
+  <div>
+    <div
+      class="per-video"
+      style="float: left; background: #f2f2f2; width: 280px"
+    >
+      <a
+        href="https://icedq.com/videos/dataops-platform-for-testing-and-monitoring"
+        ><img
+          src="https://ng.gawande.org/wp-content/uploads/2024/07/DataOps-Platform-for-Data-Test-Automation-and-Monitoring-Video-Featured-Image-iceDQ.png"
+          alt="Solutions Review had an expert-iceDQ"
+          width="280px"
+          height="165px"
+      /></a>
+      <h3
+        style="
+          font-size: 1em;
+          text-align: left;
+          padding-right: 0.5em;
+          padding-left: 0.5em;
+        "
+      >
+        <a
+          href="https://icedq.com/videos/dataops-platform-for-testing-and-monitoring"
+          >iceDQ - DataOps Platform for Data Test Automation and Monitoring</a
+        >
+      </h3>
+      <p class="resource-listing-item-meta" style="padding-bottom: 0.5em">
+        Video
+      </p>
+    </div>
+  </div>
+</div>
+
+<div id="etl-and-data-warehouse-testing" class="tabcontent">
+  <!-- How to Validate Flat Files with iceDQ -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/videos/how-to-validate-flat-files"
+          rel="noopener noreferrer"
+          ><img
+            src="How to Validate Flat Files Video Featured Image - iceDQ"
+            alt="How to Validate Flat Files with iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/videos/how-to-validate-flat-files"
+            rel="noopener noreferrer"
+            >How to Validate Flat Files with iceDQ</a
+          >
+        </h4>
+      </div>
+      <!-- <div class="course-description">
+        <p>Video</p>
+      </div> -->
+    </div>
+  </div>
+  <!-- How to Find Duplicate Rows with iceDQ? -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/videos/how-to-find-duplicate-rows"
+          rel="noopener noreferrer"
+          ><img
+            src="https://ng.gawande.org/wp-content/uploads/2024/07/How-to-Find-Duplicate-Rows-Video-Featured-Image-iceDQ.png"
+            alt="How to Find Duplicate Rows with iceDQ?"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/videos/how-to-find-duplicate-rows"
+            rel="noopener noreferrer"
+            >How to Find Duplicate Rows with iceDQ?</a
+          >
+        </h4>
+      </div>
+      <!-- <div class="course-description">
+        <p>Video</p>
+      </div> -->
+    </div>
+  </div>
+  <!--How to Perform Row Count Reconciliation with iceDQ? -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/videos/how-to-perform-row-count-reconciliation"
+          rel="noopener noreferrer"
+          ><img
+            src="https://ng.gawande.org/wp-content/uploads/2024/07/How-to-Perform-Row-Count-Reconciliation-Video-Featured-Image-iceDQ.png"
+            alt="How to Perform Row Count Reconciliation with iceDQ?"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/videos/how-to-perform-row-count-reconciliation"
+            rel="noopener noreferrer"
+            >How to Perform Row Count Reconciliation with iceDQ?</a
+          >
+        </h4>
+      </div>
+      <!-- <div class="course-description">
+        <p>Video</p>
+      </div> -->
+    </div>
+  </div>
+  <!--How to test Reference Data using Validation Rule in iceDQ? -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/videos/how-to-test-reference-data-using-validation-rule"
+          rel="noopener noreferrer"
+          ><img
+            src="https://ng.gawande.org/wp-content/uploads/2024/07/How-to-test-Reference-Data-using-Validation-Rule-Video-Featured-Image-iceDQ.png"
+            alt="How to test Reference Data using Validation Rule in iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/videos/how-to-test-reference-data-using-validation-rule"
+            rel="noopener noreferrer"
+            >How to test Reference Data using Validation Rule in iceDQ?</a
+          >
+        </h4>
+      </div>
+      <!-- <div class="course-description">
+        <p>Video</p>
+      </div> -->
+    </div>
+  </div>
+  <!--How to test Reference Data using Reconciliation Rule in iceDQ? -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/videos/how-to-test-reference-data-using-reconciliation-rule"
+          rel="noopener noreferrer"
+          ><img
+            src="https://ng.gawande.org/wp-content/uploads/2024/07/How-to-test-Reference-Data-using-Reconciliation-Rule-Video-Featured-Image-iceDQ.png"
+            alt="How to test Reference Data using Reconciliation Rule in iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/videos/how-to-test-reference-data-using-reconciliation-rule"
+            rel="noopener noreferrer"
+            >How to test Reference Data using Reconciliation Rule in iceDQ?</a
+          >
+        </h4>
+      </div>
+      <!-- <div class="course-description">
+        <p>Video</p>
+      </div> -->
+    </div>
+  </div>
+  <!--How to test Referential Data Integrity using iceDQ? -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/videos/how-to-test-referential-data-integrity"
+          rel="noopener noreferrer"
+          ><img
+            src="https://ng.gawande.org/wp-content/uploads/2024/07/How-to-test-Referential-Data-Integrity-Video-Featured-Image-iceDQ.png"
+            alt="How to test Referential Data Integrity using iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/videos/how-to-test-referential-data-integrity"
+            rel="noopener noreferrer"
+            >How to test Referential Data Integrity using iceDQ?</a
+          >
+        </h4>
+      </div>
+      <!-- <div class="course-description">
+        <p>Video</p>
+      </div> -->
+    </div>
+  </div>
+  <!--How to Compare Source and Target Database Schemas with iceDQ? -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/videos/how-to-compare-source-and-target-database-schemas"
+          rel="noopener noreferrer"
+          ><img
+            src="https://ng.gawande.org/wp-content/uploads/2024/07/How-to-Compare-Source-and-Target-Database-Schemas-Video-Featured-Image-iceDQ.png"
+            alt="How to Compare Source and Target Database Schemas with iceDQ?"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/videos/how-to-compare-source-and-target-database-schemas"
+            rel="noopener noreferrer"
+            >How to Compare Source and Target Database Schemas with iceDQ?</a
+          >
+        </h4>
+      </div>
+      <!-- <div class="course-description">
+        <p>Video</p>
+      </div> -->
+    </div>
+  </div>
+  <!--How to Compare Flat File with Table using iceDQ? -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/videos/how-to-compare-flat-file-with-table"
+          rel="noopener noreferrer"
+          ><img
+            src="https://ng.gawande.org/wp-content/uploads/2024/07/How-to-Compare-Flat-File-with-Table-Video-Featured-Image-iceDQ.png"
+            alt="How to Compare Flat File with Table using iceDQ?"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/videos/how-to-compare-flat-file-with-table"
+            rel="noopener noreferrer"
+            >How to Compare Flat File with Table using iceDQ?</a
+          >
+        </h4>
+      </div>
+      <!-- <div class="course-description">
+        <p>Video</p>
+      </div> -->
+    </div>
+  </div>
+
+  <!--How to Effectively Use Parameters in iceDQ for Rule Flexibility and Reusability? -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/videos/rule-flexibility-and-reusability-parameters"
+          rel="noopener noreferrer"
+          ><img
+            src="https://ng.gawande.org/wp-content/uploads/2024/07/How-to-Effectively-Use-Parameters-in-iceDQ-for-Rule-Flexibility-and-Reusability-Video-Featured-Image-iceDQ.png"
+            alt="How to Effectively Use Parameters in iceDQ for Rule Flexibility and Reusability"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/videos/rule-flexibility-and-reusability-parameters"
+            rel="noopener noreferrer"
+            >How to Effectively Use Parameters in iceDQ for Rule Flexibility and
+            Reusability?</a
+          >
+        </h4>
+      </div>
+      <!-- <div class="course-description">
+        <p>Video</p>
+      </div> -->
+    </div>
+  </div>
+  <!--How to Verify Date Format? -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/videos/how-to-verify-date-format"
+          rel="noopener noreferrer"
+          ><img
+            src="https://ng.gawande.org/wp-content/uploads/2024/07/How-to-Verify-Date-Format-Video-Featured-Image-iceDQ.png"
+            alt="How to Verify Date Format"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/videos/how-to-verify-date-format"
+            rel="noopener noreferrer"
+            >How to Verify Date Format?</a
+          >
+        </h4>
+      </div>
+      <!-- <div class="course-description">
+        <p>Video</p>
+      </div> -->
+    </div>
+  </div>
+  <!--How to Verify Transformation Logic using Concat Expression? -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/videos/how-to-verify-transformation-logic-using-concat-expression"
+          rel="noopener noreferrer"
+          ><img
+            src="https://ng.gawande.org/wp-content/uploads/2024/07/How-to-Verify-Transformation-Logic-using-Concat-Expression-Video-Featured-Image-iceDQ.png"
+            alt="How to Verify Transformation Logic using Concat Expression"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/videos/how-to-verify-transformation-logic-using-concat-expression"
+            rel="noopener noreferrer"
+            >How to Verify Transformation Logic using Concat Expression?</a
+          >
+        </h4>
+      </div>
+      <!-- <div class="course-description">
+        <p>Video</p>
+      </div> -->
+    </div>
+  </div>
+  <!--How to Perform Validations for Data Patterns in File? -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/video/how-to-perform-validations-for-data-patterns-in-file"
+          rel="noopener noreferrer"
+          ><img
+            src="https://ng.gawande.org/wp-content/uploads/2024/07/How-to-Perform-Validations-for-Data-Patterns-in-File-Video-Featured-Image-iceDQ.png"
+            alt="How to Perform Validations for Data Patterns in File"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/video/how-to-perform-validations-for-data-patterns-in-file"
+            rel="noopener noreferrer"
+            >How to Perform Validations for Data Patterns in File?</a
+          >
+        </h4>
+      </div>
+      <!-- <div class="course-description">
+        <p>Video</p>
+      </div> -->
+    </div>
+  </div>
+  <!--How to Perform Data Validation for Numeric Patterns? -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/videos/how-to-perform-data-validation-for-numeric-patterns"
+          rel="noopener noreferrer"
+          ><img
+            src="https://ng.gawande.org/wp-content/uploads/2024/07/How-to-Perform-Data-Validation-for-Numeric-Patterns-Video-Featured-Image-iceDQ.png"
+            alt="How to Perform Data Validation for Numeric Patterns"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/videos/how-to-perform-data-validation-for-numeric-patterns"
+            rel="noopener noreferrer"
+            >How to Perform Data Validation for Numeric Patterns?</a
+          >
+        </h4>
+      </div>
+      <!-- <div class="course-description">
+        <p>Video</p>
+      </div> -->
+    </div>
+  </div>
+  <!--How to Validate Flat File with its Control File? -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/videos/how-to-validate-flat-file-with-its-control-file"
+          rel="noopener noreferrer"
+          ><img
+            src="https://ng.gawande.org/wp-content/uploads/2024/07/How-to-Validate-Flat-File-with-its-Control-File-Video-Featured-Image-iceDQ.png"
+            alt="How to Validate Flat File with its Control File"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/videos/how-to-validate-flat-file-with-its-control-file"
+            rel="noopener noreferrer"
+            >How to Validate Flat File with its Control File?</a
+          >
+        </h4>
+      </div>
+      <!-- <div class="course-description">
+        <p>Video</p>
+      </div> -->
+    </div>
+  </div>
+  <!--How to Validate Tables after Data Migration between SQL Server and Snowflake? -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/videos/how-to-validate-tables-after-data-migration-between-sql-server-and-snowflake"
+          rel="noopener noreferrer"
+          ><img
+            src="https://ng.gawande.org/wp-content/uploads/2024/07/How-to-Validate-Tables-after-Data-Migration-between-SQL-Server-and-Snowflake-Video-Featured-Image-iceDQ.png"
+            alt="How to Validate Tables after Data Migration between SQL Server and Snowflake"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/videos/how-to-validate-tables-after-data-migration-between-sql-server-and-snowflake"
+            rel="noopener noreferrer"
+            >How to Validate Tables after Data Migration between SQL Server and
+            Snowflake?</a
+          >
+        </h4>
+      </div>
+      <!-- <div class="course-description">
+        <p>Video</p>
+      </div> -->
+    </div>
+  </div>
+  <!--How to Find Common Records between Source and Target tables? -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/videos/how-to-find-common-records-between-source-and-target-tables"
+          rel="noopener noreferrer"
+          ><img
+            src="https://ng.gawande.org/wp-content/uploads/2024/07/How-to-Find-Common-Records-between-Source-and-Target-tables-Video-Featured-Image-iceDQ.png"
+            alt="How to Find Common Records between Source and Target tables"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/videos/how-to-find-common-records-between-source-and-target-tables"
+            rel="noopener noreferrer"
+            >How to Find Common Records between Source and Target tables?</a
+          >
+        </h4>
+      </div>
+      <!-- <div class="course-description">
+        <p>Video</p>
+      </div> -->
+    </div>
+  </div>
+  <!--How to Compare Transactional Data in Source with Aggregated Data in Target? -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/videos/how-to-compare-transactional-data-in-source-with-aggregated-data-in-target"
+          rel="noopener noreferrer"
+          ><img
+            src="https://ng.gawande.org/wp-content/uploads/2024/07/How-to-Compare-Transactional-Data-in-Source-with-Aggregated-Data-in-Target-Video-Featured-Image-iceDQ.png"
+            alt="How to Compare Transactional Data in Source with Aggregated Data in Target"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/videos/how-to-compare-transactional-data-in-source-with-aggregated-data-in-target"
+            rel="noopener noreferrer"
+            >How to Compare Transactional Data in Source with Aggregated Data in
+            Target?</a
+          >
+        </h4>
+      </div>
+      <!-- <div class="course-description">
+        <p>Video</p>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+<script>
+  function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+</script>
