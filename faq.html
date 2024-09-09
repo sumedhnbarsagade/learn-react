@@ -1,0 +1,501 @@
+<style>
+    .tabcontentt h3 {
+        padding-bottom: 1em;
+        border-bottom: 1px solid #ccc;
+    }
+    
+    h4 {
+        padding-top: 0.5em;
+    }
+    /* Style the tab */
+    
+    .tab {
+        overflow: hidden;
+        background-color: #fff;
+    }
+    
+    .tabcontentt h4 {
+        font-weight: 500 !important;
+    }
+    /* Style the buttons inside the tab */
+    
+    .tab button {
+        background: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 6px 15px;
+        transition: 0.3s;
+        font-size: 18px;
+        margin: 0 5px 5px 0;
+        border-radius: 5px;
+    }
+    /* Change background color of buttons on hover */
+    
+    .tab button:hover {
+        background-color: #0078d4 !important;
+        color: #fff;
+    }
+    /* Create an active/current tablink class */
+    
+    .tab button.active {
+        background-color: #0078d4 !important;
+        color: #fff;
+    }
+    /* Style the tab content */
+    
+    .tabcontentt {
+        display: none;
+        border-top: none;
+        width: 100%;
+        padding-top: 20px;
+        margin-bottom: -15px;
+        background: #ffffff;
+    }
+    
+    h4 a {
+        text-decoration: none;
+    }
+    
+    .per-video {
+        border: 1px solid #f2f2f2;
+    }
+</style>
+
+
+<div class="tab">
+    <button class="tablinkss" onclick="openCityy(event, 'general')" id="defaultOpenfaq">General</button>
+    <button class="tablinkss" onclick="openCityy(event, 'unique-selling-point')">Unique Selling Point</button>
+    <button class="tablinkss" onclick="openCityy(event, 'use-cases')">Use Cases</button>
+    <button class="tablinkss" onclick="openCityy(event, 'architecture')">Architecture</button>
+    <button class="tablinkss" onclick="openCityy(event, 'installation')">iceDQ Installation</button>
+    <button class="tablinkss" onclick="openCityy(event, 'cloud')">Cloud</button>
+    <button class="tablinkss" onclick="openCityy(event, 'connectivity')">Connectivity</button>
+    <button class="tablinkss" onclick="openCityy(event, 'integration')">Integration</button>
+    <button class="tablinkss" onclick="openCityy(event, 'collaboration')">Collaboration</button>
+    <button class="tablinkss" onclick="openCityy(event, 'security')">iceDQ Security</button>
+    <button class="tablinkss" onclick="openCityy(event, 'reporting')">iceDQ Reporting & Dashboard</button>
+    <button class="tablinkss" onclick="openCityy(event, 'trial')">iceDQ Trial</button>
+    <button class="tablinkss" onclick="openCityy(event, 'support')">Support</button>
+    <button class="tablinkss" onclick="openCityy(event, 'training')">Training</button>
+    <button class="tablinkss" onclick="openCityy(event, 'licensing')">Licensing</button>
+    <button class="tablinkss" onclick="openCityy(event, 'services')">Services</button>
+    <button class="tablinkss" onclick="openCityy(event, 'scheduling')">Scheduling</button>
+</div>
+<div id="general" class="tabcontentt">
+    <h3>Introductions</h3>
+    <h4>What is iceDQ?</h4>
+    <p>iceDQ is a DataOps testing and monitoring platform designed to identify data issues in or across any data source using our in-memory auditing rules engine.</p>
+    <h4>What is the iceDQ full form?</h4>
+    <p>iceDQ full form stands for Integrity Check Engine for Data Quality.</p>
+    <h4>Where is iceDQ Used?</h4>
+    <p>Organizations use iceDQ in the development phase for testing ETL, Data Warehouse, Data Migrations, and BI Reports. It is also used in production environments to proactively monitor data issues.</p>
+    <h4>What is DataOps?</h4>
+    <p>DataOps is the application of DevOps principals like CICD, Agile to data-centric projects.</p>
+    <h4>What are the editions of iceDQ?</h4>
+    <p>Currently, iceDQ has three different editions; <a class="linkto gtm_internal_link" href="https://icedq.com/standard-edition">Standard Edition</a>, <a class="linkto gtm_internal_link" href="https://icedq.com/high-throughput-edition">High Throughput Edition</a> and
+        <a class="linkto gtm_internal_link" href="https://icedq.com/big-data-edition">Big Data Edition</a>.</p>
+
+    <h4>When was iceDQ launched?</h4>
+    <p>The first version of iceDQ was made available in 2008. Since then, we have had multiple releases with newer functionalities and have acquired many enterprise customers.</p>
+    <p>As of 3/1/2020 the current GA version is 16.x</p>
+
+    <h4>Who are your customers?</h4>
+    <p>We are proud to have some of the big fortune 500 companies as our customers. Organizations from different verticals such as Finance, Healthcare, Retail, Manufacturing, Insurance, and Travel use iceDQ in production and non-production environments.</p>
+
+    <h4>What are the use cases for iceDQ?</h4>
+    <p>Below are some of the use cases of iceDQ.</p>
+    <ol>
+        <li>Big Data Testing</li>
+        <li>Data Migration Testing</li>
+        <li>ETL Testing/Data Warehouse Testing</li>
+        <li>BI Report Testing</li>
+        <li>Production Monitoring</li>
+        <li>Data Compliance</li>
+    </ol>
+
+    <h4>How does it scale for the big data?</h4>
+    <p>For Big Data you can use iceDQ’s <a class="linkto gtm_internal_link" href="https://icedq.com/big-data-edition">Big Data Edition</a> where every Rule or Regression Pack is evaluated using Apache Spark cluster. User can scale the performance by scaling the
+        Spark cluster.</p>
+
+    <h4>How to schedule a demo for iceDQ?</h4>
+    <p>You can schedule a demo by registering <a class="linkto gtm_internal_link" href="https://icedq.com/intro-call">here</a> for the same.</p>
+
+    <h4>What is the learning and implementation curve for iceDQ?</h4>
+    <p>It is very short. Once the users go through a one or two-day training program, it takes them two weeks to completely implement iceDQ in their environment.</p>
+
+    <h4>Do you support Cloudera for Big Data Edition?</h4>
+    <p>Yes, currently, we support Cloudera, Hortonworks, and soon will be releasing support for AWS EMR. We have plans to support Databricks too.</p>
+
+
+</div>
+
+<div id="unique-selling-point" class="tabcontentt">
+    <h3>Unique Selling Point</h3>
+    <h4>What makes iceDQ different?</h4>
+    <p>The key differentiator is our in-memory rules engine(s). iceDQ validates data in the server memory allowing users to test a high volume of data efficiently. iceDQ also offers an engine based on Apache Spark, which enables users to scale testing of
+        billions of rows on their Spark cluster.</p>
+
+    <p>Customer support is also excellent. If you don’t believe it, then <a class="linkto gtm_internal_link" href="https://icedq.com/intro-call">sign up for a trial.</a></p>
+
+    <h4>What is the difference between iceDQ vs. other ETL Testing Tools?</h4>
+    <p>While there are many differences between iceDQ and other ETL Testing Tools, given below are a few that stand out the most.</p>
+    <ol>
+        <li>iceDQ evaluates data in memory; it does not load it into any database.</li>
+        <li>It supports four different types of rules, Recon, Validation, Checksum, and Script.</li>
+        <li>Users can use SQL + Apache Groovy to create advanced transformation checks.</li>
+        <li>Users can write Script rules using Apache Groovy or Java.</li>
+        <li>Governance/ Compliance Users for Governing or Monitoring Production systems</li>
+        <li>It is a server-based platform and does not require any client installations</li>
+        <li>An organization can create custom dashboards and reports using its enterprise reporting tool</li>
+    </ol>
+    <p>You can also read our article “<a class="linkto gtm_internal_link" href="https://icedq.com/data-quality-tools/iceDQ-platform-vs-data-quality-tools">iceDQ Platform vs Data Quality Tools</a>“</p>
+
+    <h4>How does the script rule differ from other tools?</h4>
+    <p>The Script Rule enables a user to automate the testing end to end. Users can write any custom Apache Groovy script or a Java class and execute it from iceDQ. Below are some of the real-world use cases of Script Rule:</p>
+    <ol>
+        <li>Create tables and insert expected data for testing.</li>
+        <li>Read a dynamic parameter from a database and pass it to a Rule.</li>
+        <li>Take a backup of the table and compare it with the actual table post ETL.</li>
+    </ol>
+
+</div>
+
+<div id="use-cases" class="tabcontentt">
+    <h3>Using iceDQ</h3>
+    <h4>During which phase of the project can I used iceDQ?</h4>
+    <p>
+        You can use iceDQ in
+    </p>
+    <ol>
+        <li>Development phase for Quality Assurance/ Testing</l>
+            <li>Production phase for Data Monitoring/ Compliance</li>
+    </ol>
+    <h4>Who should be interested in iceDQ?</h4>
+    <p>Following groups of users should be interested in iceDQ</p>
+    <ol>
+        <li>Developers for UNIT Testing</li>
+        <li>QA Users for Functional Testing, Non-Functional Testing, Regression Testing</li>
+        <li>QA Managers for Release Management, Sign Off</li>
+        <li>Data Architects, DW Managers to monitor the progress of the project</li>
+        <li>Governance/ Compliance Users for Governing or Monitoring the Production system</li>
+    </ol>
+
+    <h4>What amount of data can be compared using iceDQ?</h4>
+    <p>You can compare millions of rows with iceDQ. Depending upon the type of audit rule created, iceDQ can process anywhere between 10k – 20k rows/ sec.</p>
+
+    <h4>Can iceDQ compare a File with a database?</h4>
+    <p>Yes, it can. iceDQ supports Flat Files, Excel, XML, JSON, Parquet, and other file formats.</p>
+
+    <h4>Does it use a database to compare?</h4>
+    <p>No, iceDQ does not use a database to compare or validate data. It has an in-memory rules engine purely built in Java and Spark.</p>
+
+</div>
+
+<div id="architecture" class="tabcontentt">
+    <h3>Architecture</h3>
+    <h4>Does iceDQ run on my desktop or server?</h4>
+    <p>The software runs on a server where all the data processing happens. Users can access it through the web app; no client installations needed.</p>
+
+    <h4>Does it use a database to compare?</h4>
+    <p>No, iceDQ does not use a database to compare or validate data. It has an in-memory rules engine purely built in Java.</p>
+
+    <h4>Does it need a lot of memory?</h4>
+    <p>Not at all. The engine pulls data into memory, in chunks, evaluates it, and keeps on doing that till the complete data set is validated.</p>
+
+    <h4>How can I scale iceDQ?</h4>
+    <p>There are multiple ways to scale iceDQ based on the requirement. Different options are available:</p>
+    <ol>
+        <li>Adding more CPU will allow you to run more Rules in parallel.</li>
+        <li>Using our HA Cluster will enable you to install the engine and app on multiple servers. This will make the app Highly available and increase the number of CPUs.</li>
+        <li>Using <a class="linkto gtm_internal_link" href="https://icedq.com/high-throughput-edition">High Throughput Edition</a> will allow you to run a Rule on multiple cores, in turn, improving the
+            performance of an individual Rule.
+        </li>
+        <li><a class="linkto gtm_internal_link" href="https://icedq.com/big-data-edition">Big Data Edition</a> will enable the user to scale the performance of an individual Rule based on the size of
+            the cluster.</li>
+    </ol>
+    <h4>Do you expose any iceDQ API?</h4>
+    <p>We do expose an API to execute Rules from any external tool for integration. Users can override connections and parameters on runtime using the API allowing them to reuse the Rules.</p>
+
+    <h4>Can Rules be migrated to across instances of iceDQ?</h4>
+    <p>Yes. Users can export an individual Rule, a batch of Rules, or a complete project into an export file. And then import it in any instance of iceDQ.</p>
+</div>
+
+<div id="installation" class="tabcontentt">
+    <h3>iceDQ Installation</h3>
+
+    <h4>What is the installation requirement?</h4>
+    <p>Below are the requirements for installing iceDQ.</p>
+    <ul>
+        <li>Windows or Linux Server</li>
+        <li>Java JDK 1.8 or above</li>
+        <li>Database Schema (Oracle/ MSSQL/ Postgres)</li>
+    </ul>
+    <p>You can take a look at the pre-installation checklist <a class="linkto gtm_internal_link" href="https://docs.icedq.com/install-options">here</a>.</p>
+
+    <h4>How much memory should I allocate to the iceDQ server?</h4>
+    <p>We recommend a minimum of 16 GB. You can increase it based on your workload and usage.</p>
+
+    <h4>How much time does it take to install iceDQ?</h4>
+    <p>It takes 30-45 mins to install and get iceDQ up and running.</p>
+
+    <h4>How complicated is the iceDQ upgrade?</h4>
+    <p>It is a straightforward, in-place upgrade. We recommend taking a backup of the database repository before the update.</p>
+</div>
+
+<div id="cloud" class="tabcontentt">
+    <h3>Can I install iceDQ on a cloud?</h3>
+    <p>Yes, you can install iceDQ on any cloud platform. Customers have installed this on AWS, Azure, and GCP.</p>
+
+    <h4>Can I connect on-prem data sources from cloud and via-a-vis?</h4>
+    <p>Yes, as long as your VPN allows you to do so. We do not put any restrictions on where you can install and what you can connect too.</p>
+
+    <h4>What cloud data sources can I connect using iceDQ?</h4>
+    <p>You can connect to Snowflake, Redshift, S3, and many others. Find the complete list <a class="linkto gtm_internal_link" href="https://icedq.com/data-connectors">here</a>.</p>
+</div>
+
+<div id="connectivity" class="tabcontentt">
+
+    <h3>Connectivity</h3>
+    <h4>How does iceDQ connect to a data source?</h4>
+    <p>It uses JDBC or JDBC-ODBC bridge to connect to various data sources. Sometimes we built custom connectors using the data source SDK in Java.</p>
+
+    <h4>What are the databases iceDQ can connect too?</h4>
+    <p>It can connect to any JDBC compliant database like SQL Server, Oracle, Postgres SQL, etc. You can look at the complete list of database connectors <a class="linkto gtm_internal_link" href="https://icedq.com/data-connectors#Database">here</a>.</p>
+
+    <p>What are the different file formats supported by iceDQ?</h4>
+        <p>Users can read data from flat files (delimited or fixed-width), XML, JSON, Excel. You can check out the complete list of supported file types <a class="linkto gtm_internal_link" href="https://icedq.com/data-connectors#Files">here</a>.</p>
+        <p>Users can read data from flat files (delimited or fixed-width), XML, JSON, Excel. You can check out the complete list of supported file types <a class="linkto gtm_internal_link" href="https://icedq.com/data-connectors#Files">here</a>.</p>
+
+        <h4>Does iceDQ support XML?</h4>
+        <p>Yes, iceDQ allows the user to write SQL against an XML file. </p>
+
+        <h4>Does iceDQ support JSON?</h4>
+        <p>Yes, iceDQ allows the user to write SQL against a JSON file.</p>
+
+        <h4>What if the connector I want is not available in iceDQ?</h4>
+        <p>You can raise a feature request on our support portal or reach out to our sales team to get more information.</p>
+
+        <h4>What BI Reporting Tools does iceDQ support for testing?</h4>
+        <p>Currently, we support the SAP, BO, Webi, and Tableau. Our roadmap for BI Report connectors is driven by customer request. Next, we are going to release the connector for Microstrategy.</p>
+
+        <h4>What Big Data systems does iceDQ support?</h4>
+        <p>It can connect to Hive, Impala, Cassandra, and many other data sources in your ecosystem. You can find the complete list here.</p>
+
+        <h4>Can I compare PDF files using iceDQ?</h4>
+        <p>There is no direct support for PDF files, but customers have converted it into XML and used our connector for XML to compare the data.</p>
+
+        <h4>What cloud Data Warehouses can you connect too?</h4>
+        <p>You can connect to Snowflake, Redshift, Azure Synapse, and a few others. You can find the complete list here.</p>
+
+        <h4>Does iceDQ have access to our data?</h4>
+        <p>No. iceDQ is a software that is entirely managed by the customer with the help of our support team. It does not communicate with external systems, and our teams do not have access to your instance of iceDQ.</p>
+</div>
+
+<div id="integration" class="tabcontentt">
+    <h3>Integration</h3>
+    <h4>We have HPQC and want to see all the results in iceDQ. Can we do that with iceDQ?</h4>
+    <p>Yes, iceDQ comes with an outbox integration with HP ALM 12.5 or above. You can import the Requirement and Test Cases from HP ALM and associate the audit rules. After the execution results will be posted back in HP ALM.</p>
+
+    <h4>I want to integrate iceDQ with Informatica. Is it possible?</h4>
+    <p>Yes, it can be integrated with ETL Tool out there in the market through command line or web services.</p>
+
+    <h4>Can it also be integrated with Control-M or Autosys?</h4>
+    <p>Definitely, you can achieve that using the command line or web service interface of iceDQ.</p>
+
+    <h4>What are some of the out of box integrations?</h4>
+    <p>We have Rest API’s and a CLI which customers use to trigger test from any external Scheduling, ETL, Workflow, or Scripting tool.</p>
+
+    <p>Currently, we have out of the box integrations with HP ALM, JIRA, and <a class="linkto gtm_internal_link" href="https://plugins.jenkins.io/iceDQ/">Jenkins</a>. Customers can also build their own integrations with tools like Service Now, Slack, Elastic Search
+        through our Integration Hub module.</p>
+
+    <h4>Can I call iceDQ API from other tools?</h4>
+    <p>Yes, you can. We have Rest API to trigger Rules and Regression packs from any external tool.</p>
+
+    <h4>Will I be able to integrate iceDQ with a CI/CD tool?</h4>
+    <p>Absolutely!!! Customers have integrated with Jenkins, Bamboo, and other CI/ CD tools using our APIs, CLI, or plugins.</p>
+
+    <h4>What test case management tools can I integrate with iceDQ?</h4>
+    <p>You can integrate with HP ALM, X-Ray. And we are planning to release support for QTest, TFS, and a few other test case management tool.</p>
+</div>
+
+<div id="collaboration" class="tabcontentt">
+    <h3>Collaboration</h3>
+    <h4>Do I receive certain kind of alert or notification if a test fails?</h4>
+    <p>Yes, iceDQ will send email alerts on success or failure of rule depending upon how it is configured.</p>
+</div>
+
+<div id="security" class="tabcontentt">
+    <h3>iceDQ Security</h3>
+    <h4>Do you support RBAC?</h4>
+    <p>Yes, we do. Customers can create users, groups, and give different types of grants on connections, projects, and other entities.</p>
+
+    <h4>Can iceDQ integrate with LDAP?</h4>
+    <p>Yes. Customers can support LDAP users as well as local application users at the same time.</p>
+
+    <h4>How does iceDQ ensure database access security?</h4>
+    <p>iceDQ supports two types of connections, generic connections that can use service accounts and user connections in which each user has to provide their credentials. User connection offers an added level of security as other users are not using credentials.</p>
+</div>
+
+<div id="reporting" class="tabcontentt">
+    <h3>iceDQ Reporting & Dashboard</h3>
+    <h4>Does iceDQ have any built-in reports?</h4>
+    <p>Yes, iceDQ provides a few pre-packaged dashboards in its reporting and dashboard module.</p>
+
+    <h4>Can I create custom reports and dashboards?</h4>
+    <p>Yes, you can. We have reporting and dashboard module which allows users to generate any report and dashboards using available templates.</p>
+
+    <h4>How does iceDQ report test failures?</h4>
+    <p>It sends email alerts on the success and failures of the Rules. The email includes execution details as well as the ability to download the data issues in an excel format. The Rules are configured to send email alerts to users, groups, or distribution
+        lists.
+    </p>
+</div>
+
+
+<div id="trial" class="tabcontentt">
+    <h3>iceDQ Trial</h3>
+    <h4>Do you offer a free iceDQ trial?</h4>
+    <p>Yes, we give a free 30-day trial, where you will have access to the complete iceDQ software and support. First we will schedule a demo of the product and answer any questions you have. This ensures that your requirements can be satisfied by iceDQ.</p>
+    <p><a class="linkto gtm_internal_link" href="https://plugins.jenkins.io/iceDQ/">Request for 30 Day Free Trial</a>.</p>
+
+    <h4>Do you provide training during the trial period?</h4>
+    <p>As part of the trial/ POC, we do a 1.5-hour training session at no cost. We also schedule a weekly standing call to help you with any questions.</p>
+
+    <p>We also provide access to our support portal.
+        <p>
+
+            <h4>What do I need to install iceDQ?</h4>
+            <p>Download iceDQ pre-installation checklist <a class="linkto gtm_internal_link" href="https://icedq.com/resources">here</a>.</p>
+
+            <h4>What are the features disabled in the iceDQ trial?</h4>
+            <p>We provide a most recent GA full version iceDQ software for a trial. Nothing is disabled.</p>
+
+            <h4>Where can I install iceDQ?</h4>
+            <p>You can install it on-prem or in your private cloud (AWS/ Azure/ GCP).</p>
+
+            <h4>If I have any questions or issues during my trial, what is the best way to get an answer?</h4>
+            <p>You can raise a ticket on the iceDQ support portal. We will also assign a customer success manager to you as part of the trial, who will be responsible for coordinating everything.</p>
+</div>
+
+<div id="support" class="tabcontentt">
+    <h3>Support</h3>
+    <h4>What support channels do you offer?</h4>
+    <p>We provide email, phone, and WebEx support. In some instances, we offer onsite support too.</p>
+
+    <h4>Do you provide 24x7 support?</h4>
+    <p>Yes, we provide 24×7 support via email, phone, or WebEx.</p>
+
+    <h4>How can I open a ticket?</h4>
+    <p>As part of onboarding, we provide access to our support portal. Users can raise tickets there or send an email to support.</p>
+
+    <h4>Do you have an online knowledgebase?</h4>
+    <p>Yes, we do. Once you get access to our support portal, you will get access to the KB too.</p>
+</div>
+
+<div id="training" class="tabcontentt">
+    <h3>Training</h3>
+    <h4>Do you have any iceDQ training programs?</h4>
+    <p>Yes, we provide instructor-led training classes that are either online or in person.</p>
+
+    <h4>Do you offer a formal certification for iceDQ?</h4>
+    <p>Yes, you will receive a certificate as an “iceDQ Certified Developer” upon the completion of your training program. It is valid for a calendar year, and a refresher course will be required if there are changes in the software.</p>
+
+    <h4>Do you have an online course?</h4>
+    <p>Yes, we offer an instructor-led online training program. Each class is interactive and offers hands-on exercises. We will soon be launching a self-paced online training program.</p>
+
+    <h4>Do you provide a group discount for the iceDQ training?</h4>
+    <p>Yes, we do. Please <a class="linkto gtm_internal_link" href="https://icedq.com/contact-us">contact us</a> for more details.</p>
+</div>
+
+
+<div id="licensing" class="tabcontentt">
+    <h3>Licensing</h3>
+    <h4>How does iceDQ's licensing work?</h4>
+    <p>We offer different licensing options for customers to choose from based on requirements.</p>
+    <ul>
+        <li><b>Server license (Annual Subscription)</b></li>
+    </ul>
+    <p style="padding-left:2em;">Deploy iceDQ on a Server with no restriction on the number of users.</p>
+    <ul>
+        <li><b>Enterprise license (Unlimited deployments)</b></li>
+    </ul>
+    <p style="padding-left:2em;">Customers can deploy unlimited instances of iceDQ products across the organization.</p>
+
+    <h4>Is there any limit on the number of users in the Server license?</h4>
+    <p>No, Unlimited users can log in and use iceDQ.</p>
+
+    <h4>Do you offer subscription licensing?</h4>
+    <p>Yes, we do offer a subscription license for iceDQ.</p>
+
+    <h4>Are there any additional licensing costs?</h4>
+    <p>We offer custom connectors add-on for certain types of files and cloud systems and also load balancer add-on. Every add-on is charged separately on a la cart basis.</p>
+
+    <p><a class="linkto gtm_internal_link" href="linkto https://icedq.com/contact-us">Contact us</a> for more information.</p>
+
+    <h4>Do you offer special pricing for non-profit organizations?</h4>
+    <p>Yes, we do. Please reach out to us for <a class="linkto gtm_internal_link" href="https://icedq.com/contact-us">more details.</a></p>
+    </p>
+</div>
+
+<div id="services" class="tabcontentt">
+    <h3>Services</h3>
+    <h4>Do you offer any services to get us started quickly?</h4>
+    <p>Yes, we offer a Jumpstart program, Data Testing as a Service (DTaaS), Data Migration Testing Service, and also resources who are experts in Data Testing and iceDQ.</p>
+
+    <h4>What does the Jumpstart program entail?</h4>
+    <p>Along with the installation, configuration, and training, additional work of actually implementing test rules and mentoring for live projects.</p>
+
+    <p>iceDQ resources will be collecting requirements and implementing audit rules and sharing experience with client resources. Eventually, the customer takes over the activities as they will have a complete grasp of the usage because of ongoing mentoring.</p>
+
+    <h4>What is Data Testing as a Service?</h4>
+    <p>Many organizations want to focus on their core activities and would like someone else manages their data testing and monitoring needs. In such cases, simply hiring an external resource does not work. Because the external resource is responsible for
+        tasks but not the failure or success of the project, that risk is still with the customer.</p>
+
+    <p>iceDQ specializes in data related testing and monitoring and offers “Data Testing as a Service” wherein the iceDQ team ultimately manages the resources and testing activities.</p>
+
+    <p>The number of resources and their locations will be planned together with the client. Based on contract resource could be onsite, Nearshore/Offsite or Offshore depending on the options selected by the customer.</p>
+
+    <p>Timeframe: Annual /Project</p>
+
+    <h4>What is Data Migration Testing Service?</h4>
+    <p>A lot of organizations are moving to cloud platforms like Snowflake, Redshift, Azure DW, and many other similar platforms. These Data Migration projects have short project timelines, and that is why customers need help with accelerating the testing
+        of it.</p>
+
+    <p>This is where the iceDQ team comes in and offers its expertise on how to do Data Migration testing. We can completely manage the Data Migration Testing or provide resources that are experts in iceDQ and testing.</p>
+
+    <p>We have successfully helped customers migrate their on-prem databases to Redshift and Snowflake.</p>
+
+    </p>Please <a class="linkto gtm_internal_link" href="https://icedq.com/contact-us">reach out to us</a> for further details.</p>
+
+    <h4>Do you have short or long term services?</h4>
+    <p>Yes, we do. We offer services around Data Testing, ETL, Data Modeling, BI Analytics.</p>
+
+    <h4>Can iceDQ help me accelerate testing for Cloud Data Warehouse Migration?</h4>
+    <p>Yes, our services team has built tools and processes to help organizations test their migrations quickly and effectively.</p>
+</div>
+
+<div id="scheduling" class="tabcontentt">
+    <h3>Scheduling</h3>
+    <h4>Can I schedule test runs in iceDQ?</h4>
+    <p>Yes, you can. We have an inbuilt scheduling application. But you can also use any external scheduling tools like airflow, Control-M, or Tiday for executing iceDQ jobs.</p>
+</div>
+
+<script>
+    function openCityy(evtt, cityNamee) {
+        var i, tabcontentt, tablinkss;
+        tabcontentt = document.getElementsByClassName("tabcontentt");
+        for (i = 0; i < tabcontentt.length; i++) {
+            tabcontentt[i].style.display = "none";
+        }
+        tablinkss = document.getElementsByClassName("tablinkss");
+        for (i = 0; i < tablinkss.length; i++) {
+            tablinkss[i].className = tablinkss[i].className.replace(" active", "");
+        }
+        document.getElementById(cityNamee).style.display = "block";
+        evtt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpenfaq").click();
+</script>

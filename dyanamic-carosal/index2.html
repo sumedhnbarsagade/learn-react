@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <style>
+      /* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: 0;
+}
+
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+  */
+
+      body {
+        background-color: #000000;
+      }
+
+      .carousel {
+        height: 700px;
+        perspective: 600px;
+        transform: translateY(-100px);
+      }
+
+      .carousel .carousel-item {
+        cursor: grab;
+        width: 400px;
+      }
+
+      .carousel .carousel-item:active {
+        cursor: grabbing;
+      }
+
+      .carousel .carousel-item img {
+        width: 100%;
+      }
+
+      .carousel .carousel-item h3 {
+        background-color: #ffffff;
+        color: #000000;
+        font-size: 2em;
+        font-weight: bold;
+        margin: -5px 0 0;
+        padding: 10px 5px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="carousel">
+      <div class="carousel-item">
+        <img
+          src="https://icedq.com/wp-content/uploads/2024/09/image-4.png"
+          alt="Dog"
+          title="Dog"
+        />
+        <h3>1</h3>
+      </div>
+
+      <div class="carousel-item">
+        <img
+          src="https://icedq.com/wp-content/uploads/2024/09/image-5.png"
+          alt="Dog"
+          title="Dog"
+        />
+        <h3>2</h3>
+      </div>
+
+      <div class="carousel-item">
+        <img
+          src="https://icedq.com/wp-content/uploads/2024/09/image-6.png"
+          alt="Dog"
+          title="Dog"
+        />
+        <h3>3</h3>
+      </div>
+
+      <div class="carousel-item">
+        <img
+          src="https://icedq.com/wp-content/uploads/2024/09/image-7.png"
+          alt="Dog"
+          title="Dog"
+        />
+        <h3>4</h3>
+      </div>
+
+      <div class="carousel-item">
+        <img
+          src="https://icedq.com/wp-content/uploads/2024/09/image-8.png"
+          alt="Dog"
+          title="Dog"
+        />
+        <h3>5</h3>
+      </div>
+
+      <!-- <div class="carousel-item">
+            <img src="https://images.pexels.com/photos/434090/pexels-photo-434090.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Dog" title="Dog">
+            <h3>
+                Someone Famous 6
+            </h3>
+        </div>
+        
+        <div class="carousel-item">
+            <img src="https://images.pexels.com/photos/733416/pexels-photo-733416.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Dog" title="Dog">
+            <h3>
+                Someone Famous 7
+            </h3>
+        </div>
+        
+        <div class="carousel-item">
+            <img src="https://images.pexels.com/photos/160846/french-bulldog-summer-smile-joy-160846.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Dog" title="Dog">
+            <h3>
+                Someone Famous 8
+            </h3>
+        </div>
+        
+        <div class="carousel-item">
+            <img src="https://images.pexels.com/photos/551628/pexels-photo-551628.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Dog" title="Dog">
+            <h3>
+                Someone Famous 9
+            </h3>
+        </div> -->
+    </div>
+    <script>
+      $(document).ready(function () {
+        $(".carousel").carousel();
+      });
+    </script>
+  </body>
+</html>

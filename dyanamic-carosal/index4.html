@@ -1,0 +1,207 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+<style>
+    body{
+  
+  background: #fff;
+  /* background: -webkit-linear-gradient(to right, #11998e, #38ef7d);
+  background: linear-gradient(to right, #11998e, #38ef7d) */
+
+}
+.testimonial-bg{
+ /* background-color:#fff; */
+  /* border: 5px solid #ee0979; */
+   font-family: 'Raleway', sans-serif;
+  padding: 35px 70px;
+  text-align: center;
+  position: relative;
+}
+.testimonial-bg:before{
+  content: "\f10d";
+  font-family: "fontawesome";
+  width: 75px;
+  height: 75px;
+border: 5px solid #ee0979;
+  line-height: 75px;
+  background: #fff;
+  text-align: center;
+  font-size: 50px;
+  color: #3c414c;
+  position: absolute;
+  top: -40px;
+  left: 2%;
+  display: none;
+}
+.testimonial{
+  padding: 0 15px;
+}
+.testimonial .description{
+  font-size: 20px;
+  font-weight:400;
+  font-style: italic;
+  color: #848484;
+  line-height: 30px;
+  padding-bottom: 25px;
+  margin-bottom: 15px;
+  position: relative;
+}
+.testimonial .description:before{
+  content: "";
+  width: 75%;
+  border-top: 1px solid #ee0979;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+}
+.testimonial .description:after{
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  border-bottom: 1px solid #ee0979;
+  border-right: 1px solid #ee0979;
+  transform: translateX(-50%) rotate(45deg);
+}
+.testimonial .pic{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 25px auto;
+  overflow: hidden;
+}
+.testimonial .pic img{
+  width: 100%;
+  height: auto;
+}
+.testimonial .title{
+font-family: 'Raleway', sans-serif;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ee0979;
+  text-transform: capitalize;
+  margin: 0;
+}
+.testimonial .post{
+font-family: 'Raleway', sans-serif;
+  display: inline-block;
+  font-size: 20px;
+  color: #848484;
+}
+/* .owl-theme .owl-controls{
+  margin-top: -10px;
+  position: absolute;
+  bottom: -20%;
+  right: 0;
+} */
+.owl-theme .owl-controls {
+    margin-top: -50px;
+    position: absolute;
+    /* bottom: -20%; */
+    right: 98px;
+}
+.owl-theme .owl-controls .owl-buttons div{
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background: #34363b;
+  opacity: 1;
+  padding: 0;
+ display:inline-block;
+ margin:0 10px; 
+}
+.owl-prev:before,
+.owl-next:before{
+  content: "\f104";
+  font-family: "fontawesome";
+  font-size: 23px;
+  font-weight: 700;
+  color: #fff;
+}
+.owl-next:before{
+  content:"\f105";
+}
+@media only screen and (max-width:767px){
+  .testimonial-bg{ padding: 50px 40px; }
+  .owl-theme .owl-controls{ bottom: -22%; }
+}
+@media only screen and (max-width:480px){
+  .testimonial-bg:before{
+      width: 55px;
+      height: 55px;
+      line-height: 55px;
+      font-size: 40px;
+  }
+  .testimonial-bg{ padding: 30px 10px; }
+  .owl-theme .owl-controls{ bottom: -15%; }
+}
+@media only screen and (max-width:360px){
+  .testimonial .title,
+  .testimonial .post{
+      font-size: 16px;
+  }
+  .owl-theme .owl-controls{ bottom: -12%; }
+}
+</style>
+<div class="container py-5">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="testimonial-bg">
+                <div id="testimonial-slider" class="owl-carousel">
+                    
+                    <div class="testimonial">
+                        <img src="https://icedq.com/wp-content/uploads/2024/09/image-4.png" alt="demo-image" />
+                        <!-- <p class="description">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                        </p>
+                        <div class="pic">
+                            <img src="http://www.webcoderskull.com/img/team2.png" alt="">
+                        </div>
+                        <h3 class="title">Manish,</h3>
+                        <span class="post">Web Developer</span> -->
+                    </div>
+ 
+                    <div class="testimonial">
+                        <img src="https://icedq.com/wp-content/uploads/2024/09/image-4.png" alt="demo-image" />
+                    </div>
+                    <div class="testimonial">
+                        <img src="https://icedq.com/wp-content/uploads/2024/09/image-4.png" alt="demo-image" />
+                    </div>
+                    <div class="testimonial">
+                        <img src="https://icedq.com/wp-content/uploads/2024/09/image-4.png" alt="demo-image" />
+                    </div>
+                    <div class="testimonial">
+                        <img src="https://icedq.com/wp-content/uploads/2024/09/image-4.png" alt="demo-image" />
+                    </div>
+                    <div class="testimonial">
+                        <img src="https://icedq.com/wp-content/uploads/2024/09/image-4.png" alt="demo-image" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+    $("#testimonial-slider").owlCarousel({
+        items:1,
+        itemsDesktop:[1000,1],
+        itemsDesktopSmall:[979,1],
+        itemsTablet:[768,1],
+        pagination:false,
+        navigation:true,
+        navigationText:["",""],
+        autoPlay:true
+    });
+});
+</script>

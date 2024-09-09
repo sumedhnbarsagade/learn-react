@@ -1,0 +1,1277 @@
+<style>
+  .course-card img {
+    border-radius: 5px 5px 0px 0px;
+  }
+  /* Style the tab */
+  .tab {
+    overflow: hidden;
+    background-color: #f2f2f2 !important;
+  }
+  .tab button {
+    border: 1px solid #dfdfdf;
+    border-radius: 0.2rem;
+    float: left;
+    cursor: pointer;
+    padding: 6px 15px;
+    transition: 0.3s;
+    font-size: 18px;
+    margin: 0 5px 5px 0;
+  }
+
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    border: 1px solid #0078d4;
+    border-radius: 0.2rem;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #0078d4 !important;
+    color: #fff;
+  }
+
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    border-top: none;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  h4 a {
+    text-decoration: none;
+  }
+
+  /* //new css */
+  .container {
+    margin: 10px 0px;
+    padding: 10px 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .course-container {
+    display: inline-flex;
+  }
+  .course-card {
+    width: 380px;
+    /* height: 300px; */
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #dfdfdf;
+    background: #ffffff !important;
+    border-radius: 0.5rem;
+  }
+
+  .course-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 2px 6px 10px 0 rgba(0, 0, 0, 0.2) !important;
+    transition: 0.3s;
+  }
+
+  .course-name {
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  .course-description {
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #cecece;
+  }
+
+  .details {
+    display: flex;
+    margin: 10px 0px;
+  }
+
+  .course-type {
+    width: 50%;
+    font-weight: bold;
+  }
+
+  .course-buttons {
+    display: flex;
+  }
+
+  h4 {
+    padding-top: 0px;
+  }
+</style>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'All')" id="defaultOpen">
+    All
+  </button>
+  <button class="tablinks" onclick="openCity(event, 'agile-testing')">
+    Agile Testing
+  </button>
+  <button class="tablinks" onclick="openCity(event, 'bi-testing')">
+    BI Testing
+  </button>
+  <button class="tablinks" onclick="openCity(event, 'data-integration')">
+    Data Integration
+  </button>
+  <button class="tablinks" onclick="openCity(event, 'data-management')">
+    Data Management
+  </button>
+  <button class="tablinks" onclick="openCity(event, 'data-migration-testing')">
+    Data Migration Testing
+  </button>
+  <button class="tablinks" onclick="openCity(event, 'data-monitoring')">
+    Data Monitoring
+  </button>
+  <button class="tablinks" onclick="openCity(event, 'data-observability')">
+    Data Observability
+  </button>
+  <button class="tablinks" onclick="openCity(event, 'data-quality')">
+    Data Quality
+  </button>
+  <button class="tablinks" onclick="openCity(event, 'data-testing')">
+    Data Testing
+  </button>
+  <button class="tablinks" onclick="openCity(event, 'dataOps')">DataOps</button>
+  <button class="tablinks" onclick="openCity(event, 'etl-testing')">
+    ETL Testing
+  </button>
+  <button class="tablinks" onclick="openCity(event, 'quality-assurance')">
+    Quality Assurance
+  </button>
+  <button class="tablinks" onclick="openCity(event, 'salesforce-testing')">
+    Salesforce Testing
+  </button>
+</div>
+<div id="All" class="tabcontent">
+  <!-- Data Observability Explained -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a href="https://icedq.com/data-observability" rel="noopener noreferrer"
+          ><img
+            src="https://icedq.com/wp-content/uploads/2024/08/Data-Observability-Thumbnail-Image-iceDQ.png"
+            alt="Data Observability Explained - iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/data-observability"
+            rel="noopener noreferrer"
+            >Data Observability Explained</a
+          >
+        </h4>
+      </div>
+      <div class="course-description">
+        <p>
+          It is the practice of understanding the internal state or condition of
+          a data centric system by carefully monitoring Read more...
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- Data Monitoring Concepts -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a href="https://icedq.com/data-monitoring" rel="noopener noreferrer"
+          ><img
+            src="https://icedq.com/wp-content/uploads/2024/07/Data-Monitoring-iceDQ-1-415x235.png"
+            alt="Data Monitoring Concepts - iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a href="https://icedq.com/data-monitoring" rel="noopener noreferrer"
+            >Data Monitoring Concepts</a
+          >
+        </h4>
+      </div>
+      <div class="course-description">
+        <p>
+          Data Monitoring is the systematic and continuous process of
+          establishing checks, controls and notifications for production data
+          pipelines and input data.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- Salesforce Testing Process -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a href="https://icedq.com/salesforce-testing" rel="noopener noreferrer"
+          ><img
+            src="https://icedq.com/wp-content/uploads/2024/07/Salesforce-Testing-Featured-Image-iceDQ-415x235.png"
+            alt="Salesforce Testing Process - iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/salesforce-testing"
+            rel="noopener noreferrer"
+            >Salesforce Testing Process</a
+          >
+        </h4>
+      </div>
+      <div class="course-description">
+        <p>
+          Salesforce testing is the process of ensuring the data quality,
+          functionality, and performance of a Salesforce implementation
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- Data Testing Concepts -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a href="https://icedq.com/data-testing" rel="noopener noreferrer"
+          ><img
+            src="https://icedq.com/wp-content/uploads/2024/06/Data-Testing-Concepts-Featured-Image-iceDQ-12.png"
+            alt="Data Testing Concepts - iceDQ?"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a href="https://icedq.com/data-testing" rel="noopener noreferrer"
+            >Data Testing Concepts</a
+          >
+        </h4>
+      </div>
+      <div class="course-description">
+        <p>
+          With the exponential growth in data, there is a surge of data centric
+          projects. And these data projects require testing
+        </p>
+      </div>
+    </div>
+  </div>
+  <!--ETL Testing Concepts -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a href="https://icedq.com/etl-testing" rel="noopener noreferrer"
+          ><img
+            src="https://icedq.com/wp-content/uploads/2024/06/ETL-Testing-Concept-Featured-Image-iceDQ-02.png"
+            alt="ETL Testing Concepts - iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a href="https://icedq.com/etl-testing" rel="noopener noreferrer"
+            >ETL Testing Concepts</a
+          >
+        </h4>
+      </div>
+      <div class="course-description">
+        <p>
+          ETL testing verifies that an ETL process accurately extracts,
+          transforms, and loads data according to the specifications.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!--6 Dimensions of Data Quality -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/6-data-quality-dimensions"
+          rel="noopener noreferrer"
+          ><img
+            src="https://icedq.com/wp-content/uploads/2024/06/6-Dimensions-of-Data-Quality-Featured-Image-iceDQ-01.png"
+            alt="6 Dimensions of Data Quality - iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/6-data-quality-dimensions"
+            rel="noopener noreferrer"
+            >6 Dimensions of Data Quality</a
+          >
+        </h4>
+      </div>
+      <div class="course-description">
+        <p>
+          In this guide, I will explain both data quality (DQ) and the six data
+          quality dimensions. Additionally, you will learn advanced data quality
+          concepts
+        </p>
+      </div>
+    </div>
+  </div>
+  <!--DataOps Implementation Guide -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/dataops/dataops-implementation-guide"
+          rel="noopener noreferrer"
+          ><img
+            src="https://icedq.com/wp-content/uploads/2024/06/DataOps-Implementation-Guide-Featured-Image-iceDQ-05.png"
+            alt="DataOps Implementation Guide - iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/dataops/dataops-implementation-guide"
+            rel="noopener noreferrer"
+            >DataOps Implementation Guide</a
+          >
+        </h4>
+      </div>
+      <div class="course-description">
+        <p>
+          In every organization, multiple data-centric projects are manifesting
+          in the form of a data warehouse,
+        </p>
+      </div>
+    </div>
+  </div>
+  <!--Migrating Database to Redshift, Snowflake, Azure DW -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/data-migration/migrating-database-to-redshift-snowflake-azure-and-test-with-icedq"
+          rel="noopener noreferrer"
+          ><img
+            src="https://icedq.com/wp-content/uploads/2024/06/Migrating-Database-to-Redshift-Snowflake-Azure-DW-Featured-Image-iceDQ-18-18.png"
+            alt="Migrating Database to Redshift, Snowflake, Azure DW - iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/data-migration/migrating-database-to-redshift-snowflake-azure-and-test-with-icedq"
+            rel="noopener noreferrer"
+            >Migrating Database to Redshift, Snowflake, Azure DW</a
+          >
+        </h4>
+      </div>
+      <div class="course-description">
+        <p>
+          The complexity of migration from a database to a new platform and time
+          for implementing it has many hallenges; Lack of strategy, incorrect
+          assumptions,
+        </p>
+      </div>
+    </div>
+  </div>
+  <!--BI Testing & Importance of BI Report Testing -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/bi-testing/what-is-bi-testing-and-the-importance-of-bi-report-testing"
+          rel="noopener noreferrer"
+          ><img
+            src="https://icedq.com/wp-content/uploads/2024/06/What-is-BI-Testing-and-the-Importance-of-BI-Report-Testing-Featured-Image-iceDQ-17.png"
+            alt="BI Testing & Importance of BI Report Testing - iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/bi-testing/what-is-bi-testing-and-the-importance-of-bi-report-testing"
+            rel="noopener noreferrer"
+            >BI Testing & Importance of BI Report Testing</a
+          >
+        </h4>
+      </div>
+      <div class="course-description">
+        <p>
+          Reports and dashboards are extensively used to make business
+          decisions. These decisions later form the basis for the company’s
+          growth and success.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!--Overcome Data Testing Challenges -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/agile-testing/overcome-data-testing-challenges"
+          rel="noopener noreferrer"
+          ><img
+            src="https://icedq.com/wp-content/uploads/2024/06/iCEDQ-your-Gatekeepers-for-Data-Issues-Featured-Image-iceDQ-03.png"
+            alt="Overcome Data Testing Challenges - iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/agile-testing/overcome-data-testing-challenges"
+            rel="noopener noreferrer"
+            >Overcome Data Testing Challenges</a
+          >
+        </h4>
+      </div>
+      <div class="course-description">
+        <p>
+          Today all decisions in an organization are being made on the data
+          available to them. Hence it has become critical to ensure that the
+          data
+        </p>
+      </div>
+    </div>
+  </div>
+  <!--AML Software Implementation & Monitoring -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/dataops/aml-software-implementation-production-monitoring-icedq-dataops-platform"
+          rel="noopener noreferrer"
+          ><img
+            src="https://icedq.com/wp-content/uploads/2024/06/AML-Software-Implementation-Production-Monitoring-with-iceDQ-DataOps-Platform-Featured-iceDQ-06.png"
+            alt="AML Software Implementation & Monitoring - iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/dataops/aml-software-implementation-production-monitoring-icedq-dataops-platform"
+            rel="noopener noreferrer"
+            >AML Software Implementation & Monitoring</a
+          >
+        </h4>
+      </div>
+      <div class="course-description">
+        <p>
+          iceDQ accelerates AML software implementation and prevents false
+          positive signals in AML operations.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!--iceDQ your Gatekeeper for Data Issues -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/data-integration/icedq-your-gatekeeper-for-data-issues"
+          rel="noopener noreferrer"
+          ><img
+            src="https://icedq.com/wp-content/uploads/2024/06/iCEDQ-your-Gatekeepers-for-Data-Issues-Featured-Image-iceDQ-04.png"
+            alt="iceDQ your Gatekeeper for Data Issues - iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/data-integration/icedq-your-gatekeeper-for-data-issues"
+            rel="noopener noreferrer"
+            >iceDQ your Gatekeeper for Data Issues</a
+          >
+        </h4>
+      </div>
+      <div class="course-description">
+        <p>
+          The Challenges: Today’s organizations have thousands of data
+          integration (ETL) processes constantly moving silos of data from
+        </p>
+      </div>
+    </div>
+  </div>
+  <!--The Data Migration Process & Potential Risks -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/data-migration/the-data-migration-process-and-the-potential-risks"
+          rel="noopener noreferrer"
+          ><img
+            src="https://icedq.com/wp-content/uploads/2024/06/The-Data-Migration-Process-the-Potential-Risks-Featured-Image-iceDQ-15.png"
+            alt="The Data Migration Process & Potential Risks - iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/data-migration/the-data-migration-process-and-the-potential-risks"
+            rel="noopener noreferrer"
+            >The Data Migration Process & Potential Risks</a
+          >
+        </h4>
+      </div>
+      <div class="course-description">
+        <p>
+          Data migration is the process of transferring data from one system to
+          another system, known as the target system, using a variety of tools
+          and techniques.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!--Audit Missing Element in Data Management & Data Governance -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/data-management/auditing-the-missing-element-in-data-management-and-data-governance"
+          rel="noopener noreferrer"
+          ><img
+            src="https://icedq.com/wp-content/uploads/2024/06/Audit-The-Missing-Element-in-Data-Management-and-Data-Governance-Featured-Image-iceDQ-08.png"
+            alt="Audit Missing Element in Data Management & Data Governance - iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/data-management/auditing-the-missing-element-in-data-management-and-data-governance"
+            rel="noopener noreferrer"
+            >Audit Missing Element in Data Management & Data Governance</a
+          >
+        </h4>
+      </div>
+      <div class="course-description">
+        <p>
+          Perhaps the most astonishing fact, however, is that IT has been blind
+          for so long to the need for monitoring and metering (Auditing) for
+          data health
+        </p>
+      </div>
+    </div>
+  </div>
+  <!--QA Challenges in Data Integration Projects -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/quality-assurance/qa-challenges-data-integration-projects"
+          rel="noopener noreferrer"
+          ><img
+            src="https://icedq.com/wp-content/uploads/2024/06/QA-Challenges-in-Data-Integration-Projects-Featured-Image-iceDQ-09.png"
+            alt="QA Challenges in Data Integration Projects - iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/quality-assurance/qa-challenges-data-integration-projects"
+            rel="noopener noreferrer"
+            >QA Challenges in Data Integration Projects</a
+          >
+        </h4>
+      </div>
+      <div class="course-description">
+        <p>
+          Quality Assurance (QA) is a very important component of any
+          data-centric application project. Projects such as data warehouse,
+          data migration
+        </p>
+      </div>
+    </div>
+  </div>
+  <!--Agile DW Testing & Data Migration Testing -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/agile-testing/fast-forward-qa-data-warehouse-migration-agile-way"
+          rel="noopener noreferrer"
+          ><img
+            src="https://icedq.com/wp-content/uploads/2024/06/Agile-Data-Warehouse-Testing-Data-Migration-Testing-Featured-Image-iceDQ-10.png"
+            alt="Agile DW Testing & Data Migration Testing - iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/agile-testing/fast-forward-qa-data-warehouse-migration-agile-way"
+            rel="noopener noreferrer"
+            >Agile DW Testing & Data Migration Testing</a
+          >
+        </h4>
+      </div>
+      <div class="course-description">
+        <p>
+          Development of a data warehouse, ETL, data migration or conversion
+          always faces an ever-decreasing timeline. These implementations can
+          take years
+        </p>
+      </div>
+    </div>
+  </div>
+  <!--Data Migration Testing Techniques -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/data-migration/data-migration-testing-techniques-to-migrate-data-successfully"
+          rel="noopener noreferrer"
+          ><img
+            src="https://icedq.com/wp-content/uploads/2024/06/Data-Migration-Testing-Techniques-to-Migrate-Data-Successfully-Featured-Image-iceDQ-11.png"
+            alt="Data Migration Testing Techniques - iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/data-migration/data-migration-testing-techniques-to-migrate-data-successfully"
+            rel="noopener noreferrer"
+            >Data Migration Testing Techniques</a
+          >
+        </h4>
+      </div>
+      <div class="course-description">
+        <p>
+          Data migration is the process of transferring data from one system to
+          another system, known as the target system, using
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- iceDQ Platform vs Data Quality Tools -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/data-quality-tools/icedq-platform-vs-data-quality-tools"
+          rel="noopener noreferrer"
+          ><img
+            src="https://icedq.com/wp-content/uploads/2024/06/iCEDQ-Platform-vs-Data-Quality-Tools-Featured-Image-iceDQ-20.png"
+            alt="iceDQ Platform vs Data Quality Tools - iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/data-quality-tools/icedq-platform-vs-data-quality-tools"
+            rel="noopener noreferrer"
+            >iceDQ Platform vs Data Quality Tools</a
+          >
+        </h4>
+      </div>
+      <div class="course-description">
+        <p>
+          In this article let’s contrast iceDQ with any other data quality tools
+          available in the market.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="data-observability" class="tabcontent">
+  <!-- Data Observability Explained -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a href="https://icedq.com/data-observability" rel="noopener noreferrer"
+          ><img
+            src="https://icedq.com/wp-content/uploads/2024/08/Data-Observability-Thumbnail-Image-iceDQ.png"
+            alt="Data Observability Explained - iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/data-observability"
+            rel="noopener noreferrer"
+            >Data Observability Explained</a
+          >
+        </h4>
+      </div>
+      <div class="course-description">
+        <p>
+          It is the practice of understanding the internal state or condition of
+          a data centric system by carefully monitoring Read more...
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="data-monitoring" class="tabcontent">
+  <!-- Data Monitoring Concepts -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a href="https://icedq.com/data-monitoring" rel="noopener noreferrer"
+          ><img
+            src="https://icedq.com/wp-content/uploads/2024/07/Data-Monitoring-iceDQ-1-415x235.png"
+            alt="Data Monitoring Concepts - iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a href="https://icedq.com/data-monitoring" rel="noopener noreferrer"
+            >Data Monitoring Concepts</a
+          >
+        </h4>
+      </div>
+      <div class="course-description">
+        <p>
+          Data Monitoring is the systematic and continuous process of
+          establishing checks, controls and notifications for production data
+          pipelines and input data.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="salesforce-testing" class="tabcontent">
+  <!-- Salesforce Testing Process -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a href="https://icedq.com/salesforce-testing" rel="noopener noreferrer"
+          ><img
+            src="https://icedq.com/wp-content/uploads/2024/07/Salesforce-Testing-Featured-Image-iceDQ-415x235.png"
+            alt="Salesforce Testing Process - iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/salesforce-testing"
+            rel="noopener noreferrer"
+            >Salesforce Testing Process</a
+          >
+        </h4>
+      </div>
+      <div class="course-description">
+        <p>
+          Salesforce testing is the process of ensuring the data quality,
+          functionality, and performance of a Salesforce implementation
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="data-testing" class="tabcontent">
+  <!-- Data Testing Concepts -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a href="https://icedq.com/data-testing" rel="noopener noreferrer"
+          ><img
+            src="https://icedq.com/wp-content/uploads/2024/06/Data-Testing-Concepts-Featured-Image-iceDQ-12.png"
+            alt="Data Testing Concepts - iceDQ?"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a href="https://icedq.com/data-testing" rel="noopener noreferrer"
+            >Data Testing Concepts</a
+          >
+        </h4>
+      </div>
+      <div class="course-description">
+        <p>
+          With the exponential growth in data, there is a surge of data centric
+          projects. And these data projects require testing
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="etl-testing" class="tabcontent">
+  <!--ETL Testing Concepts -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a href="https://icedq.com/etl-testing" rel="noopener noreferrer"
+          ><img
+            src="https://icedq.com/wp-content/uploads/2024/06/ETL-Testing-Concept-Featured-Image-iceDQ-02.png"
+            alt="ETL Testing Concepts - iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a href="https://icedq.com/etl-testing" rel="noopener noreferrer"
+            >ETL Testing Concepts</a
+          >
+        </h4>
+      </div>
+      <div class="course-description">
+        <p>
+          ETL testing verifies that an ETL process accurately extracts,
+          transforms, and loads data according to the specifications.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="data-quality" class="tabcontent">
+  <!--6 Dimensions of Data Quality -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/6-data-quality-dimensions"
+          rel="noopener noreferrer"
+          ><img
+            src="https://icedq.com/wp-content/uploads/2024/06/6-Dimensions-of-Data-Quality-Featured-Image-iceDQ-01.png"
+            alt="6 Dimensions of Data Quality - iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/6-data-quality-dimensions"
+            rel="noopener noreferrer"
+            >6 Dimensions of Data Quality</a
+          >
+        </h4>
+      </div>
+      <div class="course-description">
+        <p>
+          In this guide, I will explain both data quality (DQ) and the six data
+          quality dimensions. Additionally, you will learn advanced data quality
+          concepts
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- iceDQ Platform vs Data Quality Tools -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/data-quality-tools/icedq-platform-vs-data-quality-tools"
+          rel="noopener noreferrer"
+          ><img
+            src="https://icedq.com/wp-content/uploads/2024/06/iCEDQ-Platform-vs-Data-Quality-Tools-Featured-Image-iceDQ-20.png"
+            alt="iceDQ Platform vs Data Quality Tools - iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/data-quality-tools/icedq-platform-vs-data-quality-tools"
+            rel="noopener noreferrer"
+            >iceDQ Platform vs Data Quality Tools</a
+          >
+        </h4>
+      </div>
+      <div class="course-description">
+        <p>
+          In this article let’s contrast iceDQ with any other data quality tools
+          available in the market.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="dataOps" class="tabcontent">
+  <!--DataOps Implementation Guide -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/dataops/dataops-implementation-guide"
+          rel="noopener noreferrer"
+          ><img
+            src="https://icedq.com/wp-content/uploads/2024/06/DataOps-Implementation-Guide-Featured-Image-iceDQ-05.png"
+            alt="DataOps Implementation Guide - iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/dataops/dataops-implementation-guide"
+            rel="noopener noreferrer"
+            >DataOps Implementation Guide</a
+          >
+        </h4>
+      </div>
+      <div class="course-description">
+        <p>
+          In every organization, multiple data-centric projects are manifesting
+          in the form of a data warehouse,
+        </p>
+      </div>
+    </div>
+  </div>
+  <!--AML Software Implementation & Monitoring -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/dataops/aml-software-implementation-production-monitoring-icedq-dataops-platform"
+          rel="noopener noreferrer"
+          ><img
+            src="https://icedq.com/wp-content/uploads/2024/06/AML-Software-Implementation-Production-Monitoring-with-iceDQ-DataOps-Platform-Featured-iceDQ-06.png"
+            alt="AML Software Implementation & Monitoring - iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/dataops/aml-software-implementation-production-monitoring-icedq-dataops-platform"
+            rel="noopener noreferrer"
+            >AML Software Implementation & Monitoring</a
+          >
+        </h4>
+      </div>
+      <div class="course-description">
+        <p>
+          iceDQ accelerates AML software implementation and prevents false
+          positive signals in AML operations.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="bi-testing" class="tabcontent">
+  <!--BI Testing & Importance of BI Report Testing -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/bi-testing/what-is-bi-testing-and-the-importance-of-bi-report-testing"
+          rel="noopener noreferrer"
+          ><img
+            src="https://icedq.com/wp-content/uploads/2024/06/What-is-BI-Testing-and-the-Importance-of-BI-Report-Testing-Featured-Image-iceDQ-17.png"
+            alt="BI Testing & Importance of BI Report Testing - iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/bi-testing/what-is-bi-testing-and-the-importance-of-bi-report-testing"
+            rel="noopener noreferrer"
+            >BI Testing & Importance of BI Report Testing</a
+          >
+        </h4>
+      </div>
+      <div class="course-description">
+        <p>
+          Reports and dashboards are extensively used to make business
+          decisions. These decisions later form the basis for the company’s
+          growth and success.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="agile-testing" class="tabcontent">
+  <!--Overcome Data Testing Challenges -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/agile-testing/overcome-data-testing-challenges"
+          rel="noopener noreferrer"
+          ><img
+            src="https://icedq.com/wp-content/uploads/2024/06/iCEDQ-your-Gatekeepers-for-Data-Issues-Featured-Image-iceDQ-03.png"
+            alt="Overcome Data Testing Challenges - iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/agile-testing/overcome-data-testing-challenges"
+            rel="noopener noreferrer"
+            >Overcome Data Testing Challenges</a
+          >
+        </h4>
+      </div>
+      <div class="course-description">
+        <p>
+          Today all decisions in an organization are being made on the data
+          available to them. Hence it has become critical to ensure that the
+          data
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!--Agile DW Testing & Data Migration Testing -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/agile-testing/fast-forward-qa-data-warehouse-migration-agile-way"
+          rel="noopener noreferrer"
+          ><img
+            src="https://icedq.com/wp-content/uploads/2024/06/Agile-Data-Warehouse-Testing-Data-Migration-Testing-Featured-Image-iceDQ-10.png"
+            alt="Agile DW Testing & Data Migration Testing - iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/agile-testing/fast-forward-qa-data-warehouse-migration-agile-way"
+            rel="noopener noreferrer"
+            >Agile DW Testing & Data Migration Testing</a
+          >
+        </h4>
+      </div>
+      <div class="course-description">
+        <p>
+          Development of a data warehouse, ETL, data migration or conversion
+          always faces an ever-decreasing timeline. These implementations can
+          take years
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="data-integration" class="tabcontent">
+  <!--iceDQ your Gatekeeper for Data Issues -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/data-integration/icedq-your-gatekeeper-for-data-issues"
+          rel="noopener noreferrer"
+          ><img
+            src="https://icedq.com/wp-content/uploads/2024/06/iCEDQ-your-Gatekeepers-for-Data-Issues-Featured-Image-iceDQ-04.png"
+            alt="iceDQ your Gatekeeper for Data Issues - iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/data-integration/icedq-your-gatekeeper-for-data-issues"
+            rel="noopener noreferrer"
+            >iceDQ your Gatekeeper for Data Issues</a
+          >
+        </h4>
+      </div>
+      <div class="course-description">
+        <p>
+          The Challenges: Today’s organizations have thousands of data
+          integration (ETL) processes constantly moving silos of data from
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="data-migration-testing" class="tabcontent">
+  <!--The Data Migration Process & Potential Risks -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/data-migration/the-data-migration-process-and-the-potential-risks"
+          rel="noopener noreferrer"
+          ><img
+            src="https://icedq.com/wp-content/uploads/2024/06/The-Data-Migration-Process-the-Potential-Risks-Featured-Image-iceDQ-15.png"
+            alt="The Data Migration Process & Potential Risks - iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/data-migration/the-data-migration-process-and-the-potential-risks"
+            rel="noopener noreferrer"
+            >The Data Migration Process & Potential Risks</a
+          >
+        </h4>
+      </div>
+      <div class="course-description">
+        <p>
+          Data migration is the process of transferring data from one system to
+          another system, known as the target system, using a variety of tools
+          and techniques.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!--Data Migration Testing Techniques -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/data-migration/data-migration-testing-techniques-to-migrate-data-successfully"
+          rel="noopener noreferrer"
+          ><img
+            src="https://icedq.com/wp-content/uploads/2024/06/Data-Migration-Testing-Techniques-to-Migrate-Data-Successfully-Featured-Image-iceDQ-11.png"
+            alt="Data Migration Testing Techniques - iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/data-migration/data-migration-testing-techniques-to-migrate-data-successfully"
+            rel="noopener noreferrer"
+            >Data Migration Testing Techniques</a
+          >
+        </h4>
+      </div>
+      <div class="course-description">
+        <p>
+          Data migration is the process of transferring data from one system to
+          another system, known as the target system, using
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!--Migrating Database to Redshift, Snowflake, Azure DW -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/data-migration/migrating-database-to-redshift-snowflake-azure-and-test-with-icedq"
+          rel="noopener noreferrer"
+          ><img
+            src="https://icedq.com/wp-content/uploads/2024/06/Migrating-Database-to-Redshift-Snowflake-Azure-DW-Featured-Image-iceDQ-18-18.png"
+            alt="Migrating Database to Redshift, Snowflake, Azure DW - iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/data-migration/migrating-database-to-redshift-snowflake-azure-and-test-with-icedq"
+            rel="noopener noreferrer"
+            >Migrating Database to Redshift, Snowflake, Azure DW</a
+          >
+        </h4>
+      </div>
+      <div class="course-description">
+        <p>
+          The complexity of migration from a database to a new platform and time
+          for implementing it has many hallenges; Lack of strategy, incorrect
+          assumptions,
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="data-management" class="tabcontent">
+  <!--Audit Missing Element in Data Management & Data Governance -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/data-management/auditing-the-missing-element-in-data-management-and-data-governance"
+          rel="noopener noreferrer"
+          ><img
+            src="https://icedq.com/wp-content/uploads/2024/06/Audit-The-Missing-Element-in-Data-Management-and-Data-Governance-Featured-Image-iceDQ-08.png"
+            alt="Audit Missing Element in Data Management & Data Governance - iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/data-management/auditing-the-missing-element-in-data-management-and-data-governance"
+            rel="noopener noreferrer"
+            >Audit Missing Element in Data Management & Data Governance</a
+          >
+        </h4>
+      </div>
+      <div class="course-description">
+        <p>
+          Perhaps the most astonishing fact, however, is that IT has been blind
+          for so long to the need for monitoring and metering (Auditing) for
+          data health
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="quality-assurance" class="tabcontent">
+  <!--QA Challenges in Data Integration Projects -->
+  <div class="course-container">
+    <div class="course-card">
+      <div>
+        <a
+          href="https://icedq.com/quality-assurance/qa-challenges-data-integration-projects"
+          rel="noopener noreferrer"
+          ><img
+            src="https://icedq.com/wp-content/uploads/2024/06/QA-Challenges-in-Data-Integration-Projects-Featured-Image-iceDQ-09.png"
+            alt="QA Challenges in Data Integration Projects - iceDQ"
+            style="width: 100%"
+        /></a>
+      </div>
+      <div class="course-name">
+        <h4>
+          <a
+            href="https://icedq.com/quality-assurance/qa-challenges-data-integration-projects"
+            rel="noopener noreferrer"
+            >QA Challenges in Data Integration Projects</a
+          >
+        </h4>
+      </div>
+      <div class="course-description">
+        <p>
+          Quality Assurance (QA) is a very important component of any
+          data-centric application project. Projects such as data warehouse,
+          data migration
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+</script>
