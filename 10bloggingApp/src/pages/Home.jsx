@@ -3,12 +3,14 @@ import appwriteService from "../appwrite/config"
 import { Container, PostCard } from '../components'
 
 function Home() {
-    const [posts, setPosts] = useState([])
+   const [posts, setPosts] = useState([])
 
     useEffect(() => {
-        appwriteService.getPost().then((posts) => {
+        appwriteService.getPosts().then((posts) => {
             if (posts) {
                 setPosts(posts.documents)
+                console.log(posts);
+                
             }
         })
     }, [])
@@ -20,7 +22,7 @@ function Home() {
                     <div className='flex flex-wrap'>
                         <div className='p-2 w-full'>
                             <h1 className='text-2xl font-bold hover:text-gray-500' >
-                                Login to read posts
+                                No post found
                             </h1>
                         </div>
                     </div>
